@@ -1,0 +1,95 @@
+header {
+    height: 86vh;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.btn-primary {
+    position: absolute;
+    left: 63%;
+    bottom: 60%;
+    z-index: 2;
+
+}
+
+
+
+.typewriter-effect {
+    font-size: 1.1rem;
+    color: rgba(242, 173, 251, 0.595);
+
+}
+
+
+
+/*-------------HEADER SOCIALS----------------*/
+
+.header_socials {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+}
+
+.header_socials::after {
+    content: 'My code ';
+    color: var(--color-primary);
+    font-size: .8rem;
+    transform: rotate(-90deg);
+    margin-top: 6px;
+}
+
+/*----------------------ME-----------------*/
+.me {
+
+    width: 23rem;
+    /* height: 30rem; */
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 6rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    overflow: hidden;
+    /* padding: 5rem 1.5rem 1.5rem; */
+}
+
+.scroll_down {
+
+    position: absolute;
+    right: -2.3rem;
+    bottom: 8rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {
+
+    header {
+
+        height: 68vh;
+    }
+}
+
+/*===========MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+}

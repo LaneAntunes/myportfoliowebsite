@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: 0;
+    list-style: 0;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* --color-bg: #1f1f3898; */
+    --color-bg: rgb(76, 26, 84);
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #8351a8;
+    --color-primary-variant: #c78df4;
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* make images easier to work with */
+img,
+picture {
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.57;
+    background-color: #04001db3;
+    opacity: 0.9;
+    background-image: radial-gradient(#a107e4 0.75px, #05001bd1 0.75px);
+    background-size: 15px 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+
+    }
+}
+
+
+/******** GENERAL STYLES*****/
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+section {
+    /* height: 100vh; */
+    margin-top: 2rem;
+}
+
+section>h2,
+section>h5 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+section>h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-white);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+
+}
+
+.btn-primary {
+    background: #8251a8a0;
+
+    color: var(--color-white);
+}
+
+/*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/*===========MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section>h2 {
+        margin-bottom: 2rem;
+    }
 }
