@@ -20,10 +20,10 @@
 
 :root {
     /* --color-bg: #1f1f3898; */
-    --color-bg: rgb(76, 26, 84);
+    --color-bg: rgb(144, 21, 163);
     --color-bg-variant: #2c2c6c;
-    --color-primary: #8351a8;
-    --color-primary-variant: #c78df4;
+    --color-primary: #8251a8a0;
+    --color-primary-variant: #debbf9f3;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
@@ -51,6 +51,8 @@ picture {
 }
 
 body {
+    margin-left: .5rem;
+    margin-right: .5rem;
     font-family: "Poppins", sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
@@ -83,7 +85,8 @@ body {
 /******** GENERAL STYLES*****/
 .container {
     width: var(--container-width-lg);
-    margin: 0 auto;
+    padding: 0rem;
+
 }
 
 h1,
@@ -98,21 +101,28 @@ h1 {
     font-size: 1.5rem;
 }
 
-section {
-    /* height: 100vh; */
-    margin-top: 2rem;
-}
+/* section {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+} */
 
-section>h2,
+
 section>h5 {
-    text-align: center;
     color: var(--color-light);
+    padding-top: 2rem;
+    text-align: center;
+
 }
 
-section>h2 {
-    color: var(--color-primary);
-    margin-bottom: 3rem;
+section>h1 {
+    color: var(--color-primary-variant);
+    padding-bottom: 2rem;
+    text-align: center;
+
 }
+
+
 
 .text-light {
     color: var(--color-light);
@@ -146,11 +156,7 @@ a:hover {
 
 }
 
-.btn-primary {
-    background: #8251a8a0;
 
-    color: var(--color-white);
-}
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
@@ -158,9 +164,7 @@ a:hover {
         width: var(--container-width-md);
     }
 
-    section {
-        margin-top: 6rem;
-    }
+
 }
 
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/

@@ -1,30 +1,54 @@
 header {
     height: 86vh;
-    padding-top: 5rem;
+
     overflow: hidden;
+
+    padding: 5rem 0rem 0rem 0rem;
+
+    display: flex;
+    justify-content: center;
 }
 
 .header_container {
     text-align: center;
     height: 100%;
     position: relative;
+
 }
 
+.btn-download-mobile {
+    display: none;
+}
 
-
-.btn-primary {
+.btn-download {
     position: absolute;
     left: 63%;
     bottom: 60%;
     z-index: 2;
+    background: var(--color-primary);
+    color: var(--color-white);
+    width: max-content;
+    display: inline-block;
+    color: var(--color-white);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
 
 }
 
 
+.btn-download:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+
+}
 
 .typewriter-effect {
     font-size: 1.1rem;
-    color: rgba(242, 173, 251, 0.595);
+    color: var(--color-primary-variant);
 
 }
 
@@ -39,46 +63,61 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
+    left: -3.5rem;
+
     bottom: 10rem;
 }
 
 .header_socials::after {
     content: 'My code ';
-    color: var(--color-primary);
+    color: var(--color-primary-variant);
     font-size: .8rem;
     transform: rotate(-90deg);
     margin-top: 6px;
 }
 
+.header_socials a {
+    color: white;
+}
+
 /*----------------------ME-----------------*/
 .me {
-
-    width: 23rem;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     /* height: 30rem; */
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 6rem;
+    /* position: absolute;
+    left: calc(50% - 11rem); */
+    /* margin-top: 3rem; */
     /* border-radius: 12rem 12rem 0 0; */
     overflow: hidden;
     /* padding: 5rem 1.5rem 1.5rem; */
 }
 
-.scroll_down {
+.me img {
+    width: 23rem;
+}
+
+.scroll-down-email {
 
     position: absolute;
-    right: -2.3rem;
+    transform: rotate(90deg);
+    right: -6.5rem;
     bottom: 8rem;
-    font-size: 1.1rem;
+    font-size: .8em;
     font-weight: 300;
+    color: var(--color-primary-variant);
 }
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
+    .btn-primary {
 
-    header {
+        left: 68%;
 
-        height: 68vh;
+
+
     }
 }
 
@@ -88,8 +127,29 @@ header {
         height: 100vh;
     }
 
-    .header_socials,
-    .scroll_down {
+    .btn-download {
         display: none;
+    }
+
+    .header_socials,
+    .scroll-down-email {
+        display: none;
+    }
+
+    .btn-download-mobile {
+        display: inline-block;
+        position: absolute;
+        left: 78%;
+        bottom: 60%;
+        z-index: 2;
+        background: #8251a8a0;
+        color: var(--color-white);
+        width: max-content;
+        color: var(--color-white);
+        padding: 0.5rem .8rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        border: 1px solid var(--color-primary);
+
     }
 }
