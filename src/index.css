@@ -54,7 +54,7 @@ body {
     margin-left: .5rem;
     margin-right: .5rem;
     font-family: "Poppins", sans-serif;
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     color: var(--color-white);
     line-height: 1.57;
     background-color: #04001db3;
