@@ -65,11 +65,11 @@ header {
     position: absolute;
     left: -3.5rem;
 
-    bottom: 10rem;
+    bottom: 5rem;
 }
 
 .header_socials::after {
-    content: 'My code ';
+    content: 'My Github ';
     color: var(--color-primary-variant);
     font-size: .8rem;
     transform: rotate(-90deg);

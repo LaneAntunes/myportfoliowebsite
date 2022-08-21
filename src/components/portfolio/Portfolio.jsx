@@ -20,8 +20,8 @@ function Portfolio() {
                             <h4>CSS</h4>
                         </div>
                         <div className='project--btns'>
-                            <a href='#' className='btn'>Live</a>
-                            <a href='#' className='btn'>Code</a>
+                            <a href='https://mastergroceries.herokuapp.com/' target='_blank' className='btn'>Live</a>
+                            <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' className='btn'>Code</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function Portfolio() {
                         </div>
                         <div className='project--btns'>
                             <a href='#' className='btn'>Live</a>
-                            <a href='#' className='btn'>Code</a>
+                            <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className='btn'>Code</a>
                         </div>
                     </div>
                 </div>

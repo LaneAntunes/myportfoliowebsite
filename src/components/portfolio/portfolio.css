@@ -25,12 +25,13 @@
 }
 
 .portfolio--section h3 {
+    color: #ebd5faec;
     font-size: 1rem;
     text-align: center;
     width: 100%;
     /* padding-bottom: .3rem; */
-    padding-top: 2rem;
-    background: var(--color-primary);
+    padding: .8rem 0rem;
+    background: #8251a885;
 }
 
 .project--details {
@@ -80,14 +81,15 @@
 }
 
 .project--description p {
-    background: var(--color-primary);
+    background: #8251a875;
+    ;
     /* margin: .5em .1em;
     border-radius: .5rem;
     padding: .5em; */
     /* background: var(--color-primary); */
     padding: 1.5em;
     font-size: .8rem;
-
+    color: #f3e7fc;
 }
 
 .project--tools {
