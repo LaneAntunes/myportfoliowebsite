@@ -22,6 +22,7 @@ footer {
 
 .permalinks a {
     color: white;
+
 }
 
 .footer--socials {
@@ -30,11 +31,13 @@ footer {
     justify-content: center;
 
     margin-top: 2em;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .footer--socials a {
-    padding: .3rem .7rem;
+    display: flex;
+    align-items: center;
+    padding: .8rem;
     border-radius: .4rem;
     color: white;
     font-size: 1.3rem;

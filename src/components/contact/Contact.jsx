@@ -10,6 +10,7 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
     const form = useRef();
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -45,7 +46,7 @@ function Contact() {
                         <BsWhatsapp className='contact-icons' />
                         <h4>WhatsApp</h4>
                         <h5>+351 910570477</h5>
-                        <a href="https://api.whatsapp.com/send?phone+351910570477" target="_blank">Send a message</a>
+                        <a href="https://wa.me/351910570477" target="_blank">Send a message</a>
                     </article>
 
                 </div>

@@ -56,13 +56,13 @@ textarea {
 }
 
 .contact-option {
-    padding-top: 1.5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     width: 250px;
     border-radius: .5rem;
     align-items: center;
-    background: var(--color-primary);
+    background: #8251a860;
 }
 
 .contact-option a {
