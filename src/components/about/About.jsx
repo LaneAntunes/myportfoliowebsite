@@ -24,18 +24,3 @@ function About() {
 
 export default About
 
-        //   <p>
-        //             I am a self-taught web developer who is very passionate about programming.
-
-        //             Communication is one of my strongest skills. I have been
-        //             to over twenty countries and lived in four, so I can
-        //             easily connect with people from different
-        //             cultures.
-        //         </p>
-        //         <p>
-        //             I have managed to teach myself how
-        //             to build websites, create online courses, edit
-        //             videos, and run an e-commerce store.
-
-        //             Now I am ready for a new and exciting challenge as web developer.
-        //         </p>
