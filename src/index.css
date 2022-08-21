@@ -131,10 +131,12 @@ section>h1 {
 a {
     color: var(--color-primary);
     transition: var(--transition);
+    font-size: .9rem;
 }
 
 a:hover {
     color: var(--color-white);
+
 }
 
 .btn {
