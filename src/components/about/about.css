@@ -30,9 +30,11 @@
 
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
 @media screen and (max-width: 600px) {
+
     .about--section {
         margin: 0;
         padding: 1em;
+
     }
 
     .about--section h1 {

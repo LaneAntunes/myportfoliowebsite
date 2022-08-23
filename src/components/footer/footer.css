@@ -51,13 +51,12 @@ footer {
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
 @media screen and (max-width: 600px) {
     footer {
+        margin-top: 2em;
         background: var(--color-primary);
         height: 40vh;
     }
 
     .permalinks {
-
-
         gap: 1rem;
 
 
