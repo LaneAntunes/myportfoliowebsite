@@ -51,6 +51,7 @@ picture {
 }
 
 body {
+    max-width: 100%;
     margin-left: .5rem;
     margin-right: .5rem;
     font-family: "Poppins", sans-serif;
@@ -169,7 +170,7 @@ a:hover {
     body {
         background-color: #04001db3;
         opacity: 0.9;
-        background-image: radial-gradient(#8302ba2f 0.50px, #05001bd1 0.70px);
+        background-image: radial-gradient(#8546a00f 0.50px, #05001bd1 0.70px);
         background-size: 13px 13px;
         margin-left: .8rem;
         margin-right: .8rem;
