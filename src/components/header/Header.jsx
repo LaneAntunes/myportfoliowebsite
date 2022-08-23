@@ -11,7 +11,7 @@ import CV from '../../assets/cv.pdf'
 function Header() {
     return (
         <header>
-            <div className='container header_container '>
+            <div className=' container header_container '>
                 <h2>Hi, </h2>
                 <h2>I'm Lane</h2>
                 <h2 className="typewriter-effect">

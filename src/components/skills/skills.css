@@ -66,3 +66,22 @@ article {
     color: var(--color-primary-variant);
     margin-top: 4px;
 }
+
+/*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {}
+
+/*===========MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 600px) {
+
+
+
+    .skill-cards {
+
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+}
