@@ -100,6 +100,7 @@ textarea {
     .contact--section {
         padding-top: 0;
         margin-top: 4em;
+        border: none;
     }
 
     .contact-options {

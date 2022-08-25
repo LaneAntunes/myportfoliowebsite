@@ -19,6 +19,12 @@
 /* ------------------- */
 
 :root {
+    /* Typography*/
+    --font-size-one: 1.5rem;
+    --font-size-two: 1.3rem;
+    --font-size-three: 1rem;
+    --font-size-four: .8rem;
+
     /* --color-bg: #1f1f3898; */
     --color-bg: rgb(144, 21, 163);
     --color-bg-variant: #2c2c6c;
@@ -99,15 +105,21 @@ h5 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-one);
 }
 
-/* section {
-    border: 2px solid yellow;
-    display: flex;
-    flex-direction: column;
-} */
+h2 {
+    font-size: var(--font-size-two);
+}
 
+h3 {
+    font-size: var(--font-size-three);
+}
+
+p {
+    font-size: var(--font-size-four);
+    font-weight: 300;
+}
 
 section>h5 {
     color: var(--color-light);
@@ -118,7 +130,7 @@ section>h5 {
 
 section>h1 {
     color: var(--color-primary-variant);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
 
 }
@@ -132,7 +144,7 @@ section>h1 {
 a {
     color: var(--color-primary);
     transition: var(--transition);
-    font-size: .9rem;
+    font-size: var(--font-size-four);
 }
 
 a:hover {
@@ -170,8 +182,8 @@ a:hover {
     body {
         background-color: #04001db3;
         opacity: 0.9;
-        background-image: radial-gradient(#7613a00f 0.50px, #05001bd1 0.70px);
-        background-size: 16px 16px;
+        background-image: radial-gradient(#a903f10f 0.50px, #05001bd1 0.70px);
+        background-size: 25px 25px;
         margin-left: .8rem;
         margin-right: .8rem;
     }

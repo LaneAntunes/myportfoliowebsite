@@ -19,6 +19,13 @@
     text-align: left;
 }
 
+.about--me--title {
+    font-size: 1.3rem;
+}
+
+.description p {
+    font-size: 1rem;
+}
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
@@ -40,10 +47,8 @@
     .about--section h1 {
         padding: 1rem 0rem 0rem 0rem;
         margin: 0;
-        font-size: 1.3rem;
+
     }
 
-    .description p {
-        font-size: .9rem;
-    }
+
 }
