@@ -25,14 +25,14 @@ function Portfolio() {
                             <h4>CSS3</h4>
                         </div>
                         <div className='project--btns'>
-                            <a href='https://mastergroceries.herokuapp.com/' target='_blank' className='btn'>Live</a>
+                            <a href='https://laneantunes.github.io/mastergroceries.github.io/' target='_blank' className='btn'>Live</a>
                             <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' className='btn'>Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div className='project--details'>
-                    <div className='product--img'><img src={AibnbClone} alt="MasterGroceries" /></div>
+                    <div className='product--img'><img src={AibnbClone} alt="airbnb" /></div>
                     <div className='project--description'>
                         <h3 >Airbnb Clone</h3>
                         <p> All projects, including this one, were built using CSS3 variables, flexbox, grid and media queries for tablet and mobile.</p>
@@ -49,7 +49,7 @@ function Portfolio() {
                     </div>
                 </div>
                 <div className='project--details'>
-                    <div className='product--img'><img src={MemeGenerator} alt="MasterGroceries" /></div>
+                    <div className='product--img'><img src={MemeGenerator} alt="meme" /></div>
                     <div className='project--description'>
                         <h3 >Meme Generator</h3>
                         <p>The user can choose a funny image (from an API) and write a joke on it to create their own meme.</p>
@@ -59,8 +59,8 @@ function Portfolio() {
                                 <h4>API</h4>
                             </div>
                             <div className='project--btns'>
-                                <a href='https://createyourownmemes.herokuapp.com/' target='_blank' className='btn'>Live</a>
-                                <a href='#' className='btn'>Code</a>
+                                <a href='https://laneantunes.github.io/memegenerator/' target='_blank' className='btn'>Live</a>
+                                <a href='https://github.com/LaneAntunes/memegenerator' className='btn'>Code</a>
                             </div>
                         </div>
                     </div>
