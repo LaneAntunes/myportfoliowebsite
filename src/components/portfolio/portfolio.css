@@ -15,6 +15,25 @@
 .website--code {
     align-self: center;
     margin-bottom: 4rem;
+    background: rgb(255, 255, 255);
+    color: black;
+    width: max-content;
+    display: inline-block;
+    color: purple;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+
+}
+
+.website--code:hover {
+    transform: scale(1.1);
+    background: var(--color-white);
+    color: black;
+    border-color: transparent;
+
 }
 
 .my-projects {
@@ -38,7 +57,7 @@
 .project--details {
 
 
-    max-width: 400px;
+    max-width: 350px;
     /* max-width: 20%; */
     /* width: 100%; */
     border-radius: .5rem;
@@ -55,10 +74,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 8px solid var(--color-primary);
 
     /* max-width: 50%; */
 
 }
+
 
 
 .project--description {
@@ -71,6 +92,9 @@
 
 .project--description p {
     padding: .9em .6em;
+    display: flex;
+    justify-content: center;
+
 }
 
 

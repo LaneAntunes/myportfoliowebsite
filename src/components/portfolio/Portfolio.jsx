@@ -12,7 +12,7 @@ function Portfolio() {
         <section className='portfolio--section' id="portfolio">
             <h5>Some things I have built</h5>
             <h1>My Projects</h1>
-            <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className='btn website--code'>Website Code</a>
+            <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className=' website--code'>Website Code</a>
             <div className='my-projects'>
                 <div className='project--details'>
                     <div className='product--img'><img src={MasterGroceries} alt="MasterGroceries" /></div>
@@ -35,15 +35,15 @@ function Portfolio() {
                     <div className='product--img'><img src={AibnbClone} alt="MasterGroceries" /></div>
                     <div className='project--description'>
                         <h3 >Airbnb Clone</h3>
-                        <p> All projects, including this one, were created using CSS3 variables, flexbox, grid and media queries for tablet and mobile.</p>
+                        <p> All projects, including this one, were built using CSS3 variables, flexbox, grid and media queries for tablet and mobile.</p>
                         <div className='tools-and-btns'>
                             <div className='project--tools'>
                                 <h4>HTML</h4>
                                 <h4>CSS3</h4>
                             </div>
                             <div className='project--btns'>
-                                <a href='#' className='btn'>Live</a>
-                                <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className='btn'>Code</a>
+                                <a href='https://laneantunes.github.io/myairbnbclone.github.io/' target='_blank' className='btn'>Live</a>
+                                <a href='https://github.com/LaneAntunes/myairbnbclone.github.io' target='_blank' className='btn'>Code</a>
                             </div>
                         </div>
                     </div>
@@ -52,14 +52,14 @@ function Portfolio() {
                     <div className='product--img'><img src={MemeGenerator} alt="MasterGroceries" /></div>
                     <div className='project--description'>
                         <h3 >Meme Generator</h3>
-                        <p>The user can choose a funny image, taken from an API, and write a joke on the image creating their own meme.</p>
+                        <p>The user can choose a funny image (from an API) and write a joke on it to create their own meme.</p>
                         <div className='tools-and-btns'>
                             <div className='project--tools'>
                                 <h4>React</h4>
                                 <h4>API</h4>
                             </div>
                             <div className='project--btns'>
-                                <a href='https://createyourownmemes.herokuapp.com/' className='btn'>Live</a>
+                                <a href='https://createyourownmemes.herokuapp.com/' target='_blank' className='btn'>Live</a>
                                 <a href='#' className='btn'>Code</a>
                             </div>
                         </div>
