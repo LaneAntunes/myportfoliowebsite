@@ -127,6 +127,12 @@
     background: var(--color-primary);
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
     .portfolio--section h5 {

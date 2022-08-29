@@ -12,7 +12,7 @@ function Portfolio() {
         <section className='portfolio--section' id="portfolio">
             <h5>Some things I have built</h5>
             <h1>My Projects</h1>
-            <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className=' website--code'>Website Code</a>
+            <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className=' website--code'>Website Source Code</a>
             <div className='my-projects'>
                 <div className='project--details'>
                     <div className='product--img'><img src={MasterGroceries} alt="MasterGroceries" /></div>
