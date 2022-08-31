@@ -18,7 +18,8 @@ function Portfolio() {
                     <div className='product--img'><img src={MasterGroceries} alt="MasterGroceries" /></div>
                     <div className='project--description'>
                         <h3 >Meal Planner App</h3>
-                        <p>The user can add, remove meals and cross off items they have already purchased. Every time a meal is added or removed from the list, the number of servings and price is updated. The JS files don't need to be changed in order to add new meals or categories to the app.</p>
+                        <p>
+                            The program loops over the objects in a JS file, and displays the information on the screen. (Recipe, price, number of servings, price per serving etc..). The user can add, remove meals and cross off items they have already purchased.</p>
                         <div className='project--tools'>
                             <h4>Javascript(ES6)</h4>
                             <h4>HTML</h4>
