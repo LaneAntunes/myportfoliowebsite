@@ -11,8 +11,6 @@ function Nav() {
 
     const [activeNav, setActiveNav] = useState("#")
 
-
-
     return (
         <nav>
             <a href="#" className={activeNav == '#' ? 'active' : ''} onClick={() => setActiveNav(prev => "#")}><AiOutlineHome /></a>

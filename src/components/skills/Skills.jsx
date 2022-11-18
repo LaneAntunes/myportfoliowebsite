@@ -53,10 +53,9 @@ function Skills() {
                                 <BsPatchCheckFill className="icons" />
                                 <div>
                                     <h4>English</h4>
-                                    <h5>Advanced</h5>
+                                    <h5>Proficient</h5>
                                 </div>
                             </article>
-
                         </div>
                         <div >
                             <article>
@@ -84,17 +83,3 @@ function Skills() {
 }
 
 export default Skills
-
-{/* <div>
-<h3>Languages</h3>
-<h4>Brazilian Portuguese - Native</h4>
-<h4>English - Fluent</h4>
-<h4>French - Conversational</h4>
-</div>
-<div>
-<h3>Soft skills</h3>
-<h4>Communication</h4>
-<h4>Atention to detil</h4>
-<h4>Time management</h4>
-<h4>Problem Solving</h4>
-</div> */}

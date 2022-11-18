@@ -30,14 +30,12 @@ function Header() {
                     />
                 </h2>
                 <HeaderSocials />
-
                 <a href={CV} download className=' btn-download '>Download CV</a>
                 <a href={CV} download className=' btn-download-mobile '>CV  <FiDownload /></a>
                 <div className="me">
                     <img src={ME} alt="me" />
                 </div>
                 <a href='mailto:laneantunes51@gmail.com' target="_blank" className='scroll-down-email'>laneAntunes51@gmail.com</a>
-
             </div>
         </header>
     )

@@ -1,7 +1,5 @@
 .about--section {
     padding: 4rem 11rem;
-    /* background: white; */
-
     border: 1px solid var(--color-primary);
     border-bottom-style: none;
 }
@@ -41,7 +39,6 @@
     .about--section {
         margin: 0;
         padding: 1em;
-
     }
 
     .about--section h1 {

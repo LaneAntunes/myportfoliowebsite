@@ -19,11 +19,8 @@ section .skills--section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 500px; */
-
     border-radius: 1rem;
     padding: 2rem 6rem;
-    /* min-width: 400px; */
     transition: .2s;
 }
 
@@ -35,8 +32,6 @@ section .skills--section {
 .skill-cards:first-child:hover {
     background: transparent;
     border: 2px solid #8251a8a0;
-
-
 }
 
 .skill-cards:nth-child(2) article {
@@ -49,8 +44,6 @@ section .skills--section {
 }
 
 .skill-cards h3 {
-    /* padding-top: 1.5rem;
-    padding-bottom: 1.5rem; */
     padding-bottom: 1.5rem;
     color: var(--color-primary-variant);
 }
