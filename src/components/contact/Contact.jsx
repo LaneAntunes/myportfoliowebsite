@@ -39,13 +39,13 @@ function Contact() {
                         <MdOutlineEmail className='contact-icons' />
                         <h4>Email</h4>
                         <h5>laneantunes51@gmail.com</h5>
-                        <a href='mailto:laneantunes51@gmail.com' target="_blank">Send a message</a>
+                        <a href='mailto:laneantunes51@gmail.com' target="_blank" rel="noopener noreferrer" >Send a message</a>
                     </article>
                     <article className='contact-option'>
                         <BsWhatsapp className='contact-icons' />
                         <h4>WhatsApp</h4>
                         <h5>+351 910570477</h5>
-                        <a href="https://wa.me/351910570477" target="_blank">Send a message</a>
+                        <a href="https://wa.me/351910570477" target="_blank" rel="noopener noreferrer">Send a message</a>
                     </article>
 
                 </div>
