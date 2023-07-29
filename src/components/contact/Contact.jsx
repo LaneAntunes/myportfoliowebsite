@@ -6,6 +6,9 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 
+const serviceKey = process.env.REACT_EMAILJS_SERVICE_KEY
+const templateKey = process.env.REACT_EMAILJS_TEMPLATE_KEY
+const accessKey = process.env.REACT_EMAILJS_ACCESS_KEY
 
 
 function Contact() {
@@ -13,7 +16,7 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_nfnmgqr', 'template_w1oiw5h', form.current, 'sQ7sR6O7HijO-g0ZI')
+        emailjs.sendForm(serviceKey, templateKey, form.current, accessKey)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
