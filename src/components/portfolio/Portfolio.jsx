@@ -52,7 +52,7 @@ function Portfolio() {
                     <div className='product-img'><img src={MasterGroceries} alt="MasterGroceries" /></div>
                     <div className='project-description'>
                         <h3 >Meal Planner Application</h3>
-                        <p>I created a meal management application with vanilla Javascript. Users can select meals to add to their supermarket list. The app instantly updates the list's details, including prices. Users can also remove meals and mark items as purchased for efficient shopping
+                        <p>I created a meal management application with vanilla Javascript. Users can select meals to add to their supermarket list. The app instantly updates the list's details, including prices. Users can also remove meals and mark items as purchased for efficient shopping.
                         </p>
                         <div className='project-tools'>
                             <h4>Javascript(ES6)</h4>
