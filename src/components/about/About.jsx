@@ -11,10 +11,10 @@ function About() {
             <div className='description'>
                 <p>
                     I am a self-taught front-end developer from Brazil, currently based in Lisbon, Portugal.
-                    I am very passionate about programming, and would love to have an opportunity to work with the technologies listed here. I am also eager to learn new technologies and improve myself as a developer.
+                    I am very passionate about programming, and would love to have an opportunity to work with the technologies listed here.  I am also highly motivated to learn and embrace new technologies to continually enhance my development skills.
                 </p>
                 <p>
-                    I have excellent communication skills, and I can easily adapt to new cultures as I have taught languages for many years and lived in several countries.
+                    With a strong background in language instruction gained from teaching in various countries, I possess great communication skills and an innate ability to adapt to diverse cultures and environments.
                 </p>
 
                 <a href="#contact" className='btn'>Let's Talk</a>

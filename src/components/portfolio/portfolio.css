@@ -8,6 +8,58 @@
 
 .portfolio-section h5 {
     padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.main-project {
+    width: 60%;
+    align-self: center;
+    border: 1px solid var(--color-primary);
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.back-front-end h3 {
+    font-size: 1.2rem;
+}
+
+.back-front-end p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.all-user-actions {
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.user-actions {
+    background: var(--color-primary);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+
+}
+
+.main-project-description p {
+    font-size: .9rem;
+
+}
+
+.extra-tools-main-project {
+    font-style: italic;
+    padding-top: .6rem;
+    padding-bottom: .8rem;
 }
 
 .website-code {
@@ -45,7 +97,7 @@
     text-align: center;
     width: 100%;
     padding: .5rem 0rem;
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
 }
 
 .project-details {
@@ -65,7 +117,21 @@
     border: 8px solid var(--color-primary);
 }
 
+.main-project-tools {
+    display: flex;
+    gap: 1rem;
+}
 
+.back-front-end {
+    border: 2px solid var(--color-primary);
+    padding: .5rem;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .project-description {
     width: 100%;
@@ -80,6 +146,14 @@
     justify-content: center;
 }
 
+.main-project-description {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-items: center;
+}
 
 .project-tools {
     display: flex;
@@ -87,6 +161,7 @@
     padding-left: .5em;
     padding-right: .5em;
     padding: 1rem;
+
 }
 
 .tools-and-btns {
@@ -113,6 +188,12 @@
     gap: .8em;
 }
 
+.extra-tools-main-project {
+    text-align: center;
+    /* padding-left: 1rem; */
+}
+
+
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
     .portfolio-section h5 {
@@ -122,6 +203,34 @@
     .tools-and-btns {
         position: relative;
     }
+
+
+}
+
+/*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
+@media screen and (max-width: 1024px) {}
+
+/*===========MEDIA QUERIES (SMALL DEVICES) =======*/
+@media screen and (max-width: 600px) {
+
+    #portfolio {
+        padding-top: 4rem;
+        /* padding-bottom: 3rem; */
+    }
+
+    /* 
+    #skills h1 {
+        padding-bottom: 4rem;
+    } */
+
+    .main-project {
+
+        width: 100%;
+        margin: 0;
+        padding: 1em 0rem;
+        margin-bottom: 2em;
+    }
+
 
 
 }

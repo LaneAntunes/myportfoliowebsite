@@ -3,13 +3,15 @@ section .skills--section {
 
 }
 
+
+
 .skill-containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    min-width: 100%;
-
+    width: 100%;
+    margin-top: 3rem;
 }
 
 .skill-cards {
@@ -17,15 +19,34 @@ section .skills--section {
     border: 2px solid #8251a8a0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border-radius: 1rem;
-    padding: 2rem 6rem;
+    padding-top: 2rem;
     transition: .2s;
+}
+
+.backend-card {
+    padding: 2rem 6rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+.frontend-card {
+    padding: 2rem 6rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.language-card {
+    padding: 2rem 6rem;
+    display: flex;
 }
 
 .skill-cards:first-child {
     background: #8251a8a0;
+    width: 50%;
 }
 
 
@@ -43,8 +64,8 @@ section .skills--section {
     background: #8251a8a0;
 }
 
-.skill-cards h3 {
-    padding-bottom: 1.5rem;
+.skill-cards h2 {
+    /* padding-bottom: 1.5rem; */
     color: var(--color-primary-variant);
 }
 
@@ -75,21 +96,30 @@ article {
 @media screen and (max-width: 600px) {
 
     #skills {
-        padding-top: 4rem;
-        padding-bottom: 3rem;
+        padding-top: 1rem;
+        /* padding-bottom: 3rem; */
     }
 
-    #skills h1 {
-        padding-bottom: 4rem;
-    }
+    /* #skills h1 {
+        padding-bottom: 2rem;
+    } */
 
     .skill-cards {
 
-        min-width: 100%;
+        width: 100%;
         margin: 0;
-        padding: 2em 0rem;
+        padding: 1em 0rem;
     }
 
 
+    .skills-details {
+        gap: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
+    .skill-cards:first-child {
+        background: #8251a8a0;
+        width: 100%;
+    }
 }

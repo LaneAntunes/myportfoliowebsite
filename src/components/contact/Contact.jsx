@@ -6,37 +6,37 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 
-const serviceKey = process.env.REACT_EMAILJS_SERVICE_KEY
-const templateKey = process.env.REACT_EMAILJS_TEMPLATE_KEY
-const accessKey = process.env.REACT_EMAILJS_ACCESS_KEY
+// const serviceKey = process.env.REACT_EMAILJS_SERVICE_KEY
+// const templateKey = process.env.REACT_EMAILJS_TEMPLATE_KEY
+// const accessKey = process.env.REACT_EMAILJS_ACCESS_KEY
 
 
 function Contact() {
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const form = useRef();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
 
-        emailjs.sendForm(serviceKey, templateKey, form.current, accessKey)
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset()
+    //     emailjs.sendForm(serviceKey, templateKey, form.current, accessKey)
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    //     e.target.reset()
 
-    };
+    // };
 
     return (
         <section className='contact--section' id="contact">
             <h5>Get in Touch</h5>
             <h1>Contact Me</h1>
             <div className='contact--container'>
-                <form ref={form} onSubmit={sendEmail} className='contact-form'>
+                {/* <form ref={form} onSubmit={sendEmail} className='contact-form'>
                     <input type="text" name='name' placeholder='Enter Your Name' required />
                     <input type="email" name='email' placeholder='Enter Your E-mail' required />
                     <textarea name='message' rows="7" placeholder='Your Message' required></textarea>
                     <button type='submit' className='btn'>Send Message</button>
-                </form >
+                </form > */}
                 <div className='contact-options'>
                     <article className='contact-option'>
                         <MdOutlineEmail className='contact-icons' />
