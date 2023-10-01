@@ -41,8 +41,8 @@ function Portfolio() {
 
                     <p className='extra-tools-main-project'>* Axios, React router, custom hooks, functional components, props, useState, useEffect...</p>
                     <div className='project-btns'>
-                        <a href='https://teacherlaneantunes.com.br/' target='_blank' className='btn'>Live</a>
-                        <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' className='btn'>Code</a>
+                        <a href='https://teacherlaneantunes.com.br/' target='_blank' rel="noreferrer" className='btn'>Live</a>
+                        <a href='https://github.com/LaneAntunes/Language-Website-Full-Stack' target='_blank' rel="noreferrer" className='btn'>Code</a>
                     </div>
                 </div>
             </div>
@@ -60,8 +60,8 @@ function Portfolio() {
                             <h4>CSS3</h4>
                         </div>
                         <div className='project-btns'>
-                            <a href='https://laneantunes.com/mastergroceriesjs/' target='_blank' className='btn'>Live</a>
-                            <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' className='btn'>Code</a>
+                            <a href='https://laneantunes.com/mastergroceriesjs/' target='_blank' rel="noreferrer" className='btn'>Live</a>
+                            <a href='https://mastergroceries.vercel.app/' target='_blank' rel="noreferrer" className='btn'>Code</a>
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ function Portfolio() {
 
                             </div>
                             <div className='project-btns'>
-                                <a href='https://laneantunes.com/memegenerator/' target='_blank' className='btn'>Live</a>
-                                <a href='https://github.com/LaneAntunes/memegenerator' className='btn'>Code</a>
+                                <a href='https://laneantunes.com/' target='_blank' rel="noreferrer" className='btn'>Live</a>
+                                <a href='https://github.com/LaneAntunes/myportfoliowebsite' className='btn'>Code</a>
                             </div>
                         </div>
                     </div>
