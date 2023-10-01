@@ -60,8 +60,8 @@ function Portfolio() {
                             <h4>CSS3</h4>
                         </div>
                         <div className='project-btns'>
-                            <a href='https://laneantunes.com/mastergroceriesjs/' target='_blank' rel="noreferrer" className='btn'>Live</a>
-                            <a href='https://mastergroceries.vercel.app/' target='_blank' rel="noreferrer" className='btn'>Code</a>
+                            <a href='https://mastergroceries.vercel.app/' target='_blank' rel="noreferrer" className='btn'>Live</a>
+                            <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' rel="noreferrer" className='btn'>Code</a>
                         </div>
                     </div>
                 </div>
