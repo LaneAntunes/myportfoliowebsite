@@ -90,7 +90,12 @@ article {
 }
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .skill-cards:first-child {
+        background: #8251a8a0;
+        width: 100%;
+    }
+}
 
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
 @media screen and (max-width: 600px) {
@@ -108,7 +113,8 @@ article {
 
         width: 100%;
         margin: 0;
-        padding: 1em 0rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
 
 
@@ -121,5 +127,25 @@ article {
     .skill-cards:first-child {
         background: #8251a8a0;
         width: 100%;
+
     }
+
+    .backend-card {
+        padding: 0rem 0rem;
+        display: flex;
+        gap: 2rem;
+
+    }
+
+    .frontend-card {
+        padding: 0rem 0rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .language-card {
+        padding: 0rem 0rem;
+        display: flex;
+    }
+
 }
