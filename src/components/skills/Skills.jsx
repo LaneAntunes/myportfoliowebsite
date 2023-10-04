@@ -55,7 +55,7 @@ function Skills() {
                             <article>
                                 <BsPatchCheckFill className="icons" />
                                 <div>
-                                    <h4>Firestore (database)</h4>
+                                    <h4>Firestore database</h4>
                                 </div>
                             </article>
                         </div>
@@ -63,13 +63,13 @@ function Skills() {
                             <article>
                                 <BsPatchCheckFill className="icons" />
                                 <div>
-                                    <h4>Firebase Authentication</h4>
+                                    <h4>Firebase authentication</h4>
                                 </div>
                             </article>
                             <article>
                                 <BsPatchCheckFill className="icons" />
                                 <div>
-                                    <h4>Firebase Storage</h4>
+                                    <h4>Firebase storage</h4>
                                 </div>
                             </article>
 
@@ -88,7 +88,7 @@ function Skills() {
                         <article>
                             <div>
                                 <h4>English</h4>
-                                <h5>Proficient</h5>
+                                <h5>Fluent</h5>
                             </div>
                         </article>
                         <div >

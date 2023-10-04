@@ -11,7 +11,6 @@ function Portfolio() {
         <section className='portfolio-section' id="portfolio">
             <h5>Some things I have built</h5>
             <h1>My Projects</h1>
-            {/* <a href='https://github.com/LaneAntunes/My-Portfolio-Website' target='_blank' className=' website-code'>Website Source Code</a> */}
             <div className='main-project '>
                 <div className='product-img'><img src={websitePicture} alt="Language website" /></div>
                 <div className='main-project-description '>
@@ -30,7 +29,7 @@ function Portfolio() {
                     <div className='main-project-tools '>
                         <div className='back-front-end'>
                             <h3>Back-end:</h3>
-                            <p>Firebase - Functions, database, hosting...</p>
+                            <p>Firebase functions, firestore, authentication and firebase storage.</p>
                         </div>
                         <div className='back-front-end'>
                             <h3>Front-end:</h3>
@@ -39,7 +38,7 @@ function Portfolio() {
 
                     </div>
 
-                    <p className='extra-tools-main-project'>* Axios, React router, custom hooks, functional components, props, useState, useEffect...</p>
+                    <p className='extra-tools-main-project'>* Axios, react router, custom hooks, functional components, props, useState, useEffect...</p>
                     <div className='project-btns'>
                         <a href='https://teacherlaneantunes.com.br/' target='_blank' rel="noreferrer" className='btn'>Live</a>
                         <a href='https://github.com/LaneAntunes/Language-Website-Full-Stack' target='_blank' rel="noreferrer" className='btn'>Code</a>
