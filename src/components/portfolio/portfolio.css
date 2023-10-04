@@ -60,6 +60,7 @@
     font-style: italic;
     padding-top: .6rem;
     padding-bottom: .8rem;
+    font-size: .6rem;
 }
 
 .website-code {
@@ -217,22 +218,13 @@
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
 @media screen and (max-width: 600px) {
 
-    #portfolio {
-        padding-top: 4rem;
-        /* padding-bottom: 3rem; */
-    }
-
-    /* 
-    #skills h1 {
-        padding-bottom: 4rem;
-    } */
-
-    .main-project {
-
-        width: 100%;
-        margin: 0;
-        padding: 1em 0rem;
-        margin-bottom: 2em;
+    .all-user-actions {
+        gap: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
     }
 
 

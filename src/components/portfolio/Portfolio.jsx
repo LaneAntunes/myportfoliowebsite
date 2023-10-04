@@ -17,14 +17,11 @@ function Portfolio() {
                     <h2 >Full-Stack Language Website</h2>
                     <h3>Users can:</h3>
                     <div className='all-user-actions'>
-                        <p className='user-actions'>1. Log in/out </p>
-                        <p className='user-actions'>2. Take tests </p>
-                        <p className='user-actions'>3. Save their scores. </p>
-                        <p className='user-actions'>4. Have a personalized progress page. </p>
+                        <p className='user-actions'>1. Create an account </p>
+                        <p className='user-actions'>2. Take tests and save their score </p>
+                        <p className='user-actions'>4. Access a personalized progress page. </p>
                         <p className='user-actions'>5. Sign up for a newsletter. </p>
                         <p className='user-actions'>6. Contact the teacher. </p>
-
-                        <p className='user-actions'>7. Subscribe to a language course.</p>
                     </div>
                     <div className='main-project-tools '>
                         <div className='back-front-end'>
@@ -34,11 +31,11 @@ function Portfolio() {
                         <div className='back-front-end'>
                             <h3>Front-end:</h3>
                             <p>React and Tailwind CSS</p>
+                            <p className='extra-tools-main-project'>* Axios, react router, custom hooks, functional components, props, useState, useEffect...</p>
                         </div>
 
                     </div>
 
-                    <p className='extra-tools-main-project'>* Axios, react router, custom hooks, functional components, props, useState, useEffect...</p>
                     <div className='project-btns'>
                         <a href='https://teacherlaneantunes.com.br/' target='_blank' rel="noreferrer" className='btn'>Live</a>
                         <a href='https://github.com/LaneAntunes/Language-Website-Full-Stack' target='_blank' rel="noreferrer" className='btn'>Code</a>
@@ -108,3 +105,5 @@ function Portfolio() {
 }
 
 export default Portfolio
+
+
