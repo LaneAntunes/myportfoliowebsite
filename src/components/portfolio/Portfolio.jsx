@@ -169,8 +169,8 @@ function Portfolio() {
         <div className="main-project-description">
           <div className="main-project-tools">
             <div className="back-front-end">
-              <h3>Project 1 - FullStack language website</h3>
-              <p>
+              <h4>Project 1 - FullStack language website</h4>
+              <p style={{ fontSize: 12 }}>
                 This passion project of mine serves over 200 students, allowing
                 users to create an account, take tests, save their scores, and
                 access a personalized progress page.
@@ -180,7 +180,7 @@ function Portfolio() {
               </p>
               <div className="project-btns">
                 <a
-                  href="https://app.fantalab.it/home"
+                  href="https://teacherlaneantunes.com.br/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -199,8 +199,8 @@ function Portfolio() {
             </div>
 
             <div className="back-front-end">
-              <h3>Project 2 - Meal Manager</h3>
-              <p>
+              <h4>Project 2 - Meal Manager</h4>
+              <p style={{ fontSize: 12 }}>
                 This app is a solution for meal planning and grocery shopping,
                 automatically updating and categorizing grocery lists when meals
                 are adjusted. It dynamically updates servings and costs, and
@@ -212,7 +212,7 @@ function Portfolio() {
               </p>
               <div className="project-btns">
                 <a
-                  href="https://app.fantalab.it/home"
+                  href="https://mastergroceries.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -220,7 +220,7 @@ function Portfolio() {
                   Live
                 </a>
                 <a
-                  href="https://github.com/LaneAntunes/Language-Website-Full-Stack"
+                  href="https://github.com/LaneAntunes/mastergroceries"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
