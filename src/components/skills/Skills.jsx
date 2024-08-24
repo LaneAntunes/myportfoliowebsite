@@ -8,7 +8,7 @@ function Skills() {
       <h5>Core Competencies</h5>
       <h1>Skills & Technologies</h1>
       <div className="skill-containers">
-        <div className="skill-cards" style={{ width: "60%" }}>
+        <div className="skill-cards fontend">
           <h2>Font-end</h2>
           <div className="frontend-card">
             <div>
@@ -41,16 +41,7 @@ function Skills() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "100%",
-            gap: 10,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <div className="small-skill-containers">
           <div className="skill-cards">
             <h2>Back-end</h2>
             <div className="backend-card">

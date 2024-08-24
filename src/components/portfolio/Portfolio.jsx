@@ -14,6 +14,62 @@ import fantalab2 from "../../assets/fantalab2.PNG"
 import fantalab3 from "../../assets/fantalab3.PNG"
 import fantalab4 from "../../assets/fantalab4.PNG"
 import { BsPatchCheckFill } from "react-icons/bs"
+import { mainProjectData } from "./portfolioData"
+
+const Project = ({ width, link, title }) => {
+  const [currentImage, setCurrentImage] = useState(0)
+  const [currentMainImage, setCurrentMainImage] = useState(0)
+
+  const images = [website, website2, meal1, meal2]
+  const imagesMainProject = [fantalab1, fantalab2, fantalab3, fantalab4]
+
+  const nextImage = () => {
+    setCurrentImage((prevImage) => (prevImage + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImage(
+      (prevImage) => (prevImage + images.length - 1) % images.length
+    )
+  }
+
+  const nextMainImage = () => {
+    setCurrentMainImage(
+      (nextMainImage) => (nextMainImage + 1) % imagesMainProject.length
+    )
+  }
+
+  const prevMainImage = () => {
+    setCurrentMainImage(
+      (nextMainImage) =>
+        (nextMainImage + imagesMainProject.length - 1) %
+        imagesMainProject.length
+    )
+  }
+
+  return (
+    <div className="project-container">
+      {mainProjectData.map((item) => {})}
+      {/* <div className="image-section">
+        <button className="btn-carousel" onClick={prevMainImage}>
+          &#10094;
+        </button>
+        <img src={imagesMainProject[currentMainImage]} alt="fantalab-website" />
+        <button className="btn-carousel" onClick={nextMainImage}>
+          &#10095;
+        </button>
+        <div className="carousel-controls">
+          <button className="btn-carousel" onClick={prevMainImage}>
+            &#10094;
+          </button>
+          <button className="btn-carousel" onClick={nextMainImage}>
+            &#10095;
+          </button>
+        </div>
+      </div> */}
+    </div>
+  )
+}
 
 function Portfolio() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -46,24 +102,16 @@ function Portfolio() {
     )
   }
 
+  console.log("mainProjectData", mainProjectData)
   return (
     <section className="portfolio-section" id="portfolio">
       <h5>What I have built</h5>
       <h1>My Projects</h1>
-      <div
-        className="main-project"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          paddingTop: 5,
-        }}
-      >
-        <div className="product-img" style={{ width: " 70%", height: 600 }}>
+      <div className="main-project">
+        <div className="product-img">
           <img
             src={imagesMainProject[currentMainImage]}
-            alt="Language website"
+            alt="fantalab-website"
           />
           <div className="carousel-controls">
             <button className="btn-carousel" onClick={prevMainImage}>
@@ -154,23 +202,21 @@ function Portfolio() {
           </div>
         </div> */}
       </div>
-      <div className="main-project" style={{ width: "50%" }}>
+      <div className="main-project secondary">
         <div className="product-img">
+          <button className="btn-carousel" onClick={prevImage}>
+            &#10094;
+          </button>
           <img src={images[currentImage]} alt="Language website" />
-          <div className="carousel-controls">
-            <button className="btn-carousel" onClick={prevImage}>
-              &#10094;
-            </button>
-            <button className="btn-carousel" onClick={nextImage}>
-              &#10095;
-            </button>
-          </div>
+          <button className="btn-carousel" onClick={nextImage}>
+            &#10095;
+          </button>
         </div>
         <div className="main-project-description">
           <div className="main-project-tools">
             <div className="back-front-end">
               <h4>Project 1 - FullStack language website</h4>
-              <p style={{ fontSize: 12 }}>
+              <p className="desc">
                 This passion project of mine serves over 200 students, allowing
                 users to create an account, take tests, save their scores, and
                 access a personalized progress page.
@@ -200,7 +246,7 @@ function Portfolio() {
 
             <div className="back-front-end">
               <h4>Project 2 - Meal Manager</h4>
-              <p style={{ fontSize: 12 }}>
+              <p className="desc">
                 This app is a solution for meal planning and grocery shopping,
                 automatically updating and categorizing grocery lists when meals
                 are adjusted. It dynamically updates servings and costs, and

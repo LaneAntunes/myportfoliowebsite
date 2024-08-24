@@ -25,6 +25,10 @@ section .skills--section {
   width: 600px;
   min-height: 180px;
 }
+/* .skill-cards .frontend {
+  width: "60%" !important;
+  background-color: aliceblue;
+} */
 
 .backend-card {
   padding: 2rem 6rem;
@@ -66,6 +70,14 @@ section .skills--section {
   /* padding-bottom: 1.5rem; */
   color: var(--color-primary-variant);
 }
+.small-skill-containers {
+  display: flex;
+  flex-direction: row;
+  width: "100%";
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
 
 .skills-details {
   display: flex;
@@ -91,6 +103,9 @@ article {
     background: #8251a8a0;
     width: 100%;
   }
+}
+.small-skill-containers {
+  flex-wrap: wrap;
 }
 
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
