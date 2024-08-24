@@ -1,109 +1,239 @@
-import React from 'react'
-import './portfolio.css'
-import MasterGroceries from '../../assets/Capture4.PNG';
-import MemeGenerator from '../../assets/Capture2.PNG';
-import tenzies from '../../assets/tenziesGamePic.PNG';
-import websitePicture from '../../assets/websitePicture.JPG';
-import portfolioWebsite from '../../assets/portfolioWebsite.JPG';
+import React, { useState } from "react"
+import "./portfolio.css"
+import MasterGroceries from "../../assets/Capture4.PNG"
+import MemeGenerator from "../../assets/Capture2.PNG"
+import tenzies from "../../assets/tenziesGamePic.PNG"
+import portfolioWebsite from "../../assets/portfolioWebsite.JPG"
+import websitePicture from "../../assets/websitePicture.JPG"
+import website2 from "../../assets/website2.PNG"
+import website from "../../assets/website.PNG"
+import meal1 from "../../assets/meal1.PNG"
+import meal2 from "../../assets/meal2.PNG"
+import fantalab1 from "../../assets/fantalab1.PNG"
+import fantalab2 from "../../assets/fantalab2.PNG"
+import fantalab3 from "../../assets/fantalab3.PNG"
+import fantalab4 from "../../assets/fantalab4.PNG"
+import { BsPatchCheckFill } from "react-icons/bs"
 
 function Portfolio() {
-    return (
-        <section className='portfolio-section' id="portfolio">
-            <h5>Some things I have built</h5>
-            <h1>My Projects</h1>
-            <div className='main-project '>
-                <div className='product-img'><img src={websitePicture} alt="Language website" /></div>
-                <div className='main-project-description '>
-                    <h2 >Full-Stack Language Website</h2>
-                    <h3>Users can:</h3>
-                    <div className='all-user-actions'>
-                        <p className='user-actions'>1. Create an account </p>
-                        <p className='user-actions'>2. Take tests and save their score </p>
-                        <p className='user-actions'>4. Access a personalized progress page. </p>
-                        <p className='user-actions'>5. Sign up for a newsletter. </p>
-                        <p className='user-actions'>6. Contact the teacher. </p>
-                    </div>
-                    <div className='main-project-tools '>
-                        <div className='back-front-end'>
-                            <h3>Back-end:</h3>
-                            <p>Firebase functions, firestore, authentication and firebase storage.</p>
-                        </div>
-                        <div className='back-front-end'>
-                            <h3>Front-end:</h3>
-                            <p>React and Tailwind CSS</p>
-                            <p className='extra-tools-main-project'>* Axios, react router, custom hooks, functional components, props, useState, useEffect...</p>
-                        </div>
+  const [currentImage, setCurrentImage] = useState(0)
+  const [currentMainImage, setCurrentMainImage] = useState(0)
 
-                    </div>
+  const images = [website, website2, meal1, meal2]
+  const imagesMainProject = [fantalab1, fantalab2, fantalab3, fantalab4]
 
-                    <div className='project-btns'>
-                        <a href='https://teacherlaneantunes.com.br/' target='_blank' rel="noreferrer" className='btn'>Live</a>
-                        <a href='https://github.com/LaneAntunes/Language-Website-Full-Stack' target='_blank' rel="noreferrer" className='btn'>Code</a>
-                    </div>
-                </div>
-            </div>
+  const nextImage = () => {
+    setCurrentImage((prevImage) => (prevImage + 1) % images.length)
+  }
 
-            <div className='my-projects'>
-                <div className='project-details'>
-                    <div className='product-img'><img src={MasterGroceries} alt="MasterGroceries" /></div>
-                    <div className='project-description'>
-                        <h3 >Meal Planner Application</h3>
-                        <p>I created a meal management application with vanilla Javascript. Users can select meals to add to their supermarket list. The app instantly updates the list's details, including prices. Users can also remove meals and mark items as purchased for efficient shopping.
-                        </p>
-                        <div className='project-tools'>
-                            <h4>Javascript(ES6)</h4>
-                            <h4>HTML</h4>
-                            <h4>CSS3</h4>
-                        </div>
-                        <div className='project-btns'>
-                            <a href='https://mastergroceries.vercel.app/' target='_blank' rel="noreferrer" className='btn'>Live</a>
-                            <a href='https://github.com/LaneAntunes/MasterGroceries' target='_blank' rel="noreferrer" className='btn'>Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='project-details'>
-                    <div className='product-img'><img src={portfolioWebsite} alt="portfolio" /></div>
-                    <div className='project-description'>
-                        <h3 >Portfolio Website</h3>
-                        <p>My portfolio website combines React and CSS to create a visually appealing, responsive, and well-performing platform that effectively presents my skills and achievements..</p>
-                        <div className='tools-and-btns'>
-                            <div className='project-tools'>
-                                <h4>CSS3</h4>
-                                <h4>React</h4>
-
-                            </div>
-                            <div className='project-btns'>
-                                <a href='https://laneantunes.com/' target='_blank' rel="noreferrer" className='btn'>Live</a>
-                                <a href='https://github.com/LaneAntunes/myportfoliowebsite' className='btn'>Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                {/* <div className='project-details'>
-                    <div className='product-img'><img src={tenzies} alt="tenzies" /></div>
-                    <div className='project-description'>
-                        <h3 >Tenzies Game</h3>
-                        <p>Tenzi is a dice-rolling game. Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
-                        <div className='tools-and-btns'>
-                            <div className='project-tools'>
-                                <h4>CSS3</h4>
-                                <h4>React</h4>
-                            </div>
-                            <div className='project-btns'>
-                                <a href='https://laneantunes.com/tenziesgame/' target='_blank' className='btn'>Live</a>
-                                <a href='https://github.com/LaneAntunes/tenziesgame' target='_blank' className='btn'>Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-
-            </div>
-        </section>
+  const prevImage = () => {
+    setCurrentImage(
+      (prevImage) => (prevImage + images.length - 1) % images.length
     )
+  }
+
+  const nextMainImage = () => {
+    setCurrentMainImage(
+      (nextMainImage) => (nextMainImage + 1) % imagesMainProject.length
+    )
+  }
+
+  const prevMainImage = () => {
+    setCurrentMainImage(
+      (nextMainImage) =>
+        (nextMainImage + imagesMainProject.length - 1) %
+        imagesMainProject.length
+    )
+  }
+
+  return (
+    <section className="portfolio-section" id="portfolio">
+      <h5>What I have built</h5>
+      <h1>My Projects</h1>
+      <div
+        className="main-project"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          paddingTop: 5,
+        }}
+      >
+        <div className="product-img" style={{ width: " 70%", height: 600 }}>
+          <img
+            src={imagesMainProject[currentMainImage]}
+            alt="Language website"
+          />
+          <div className="carousel-controls">
+            <button className="btn-carousel" onClick={prevMainImage}>
+              &#10094;
+            </button>
+            <button className="btn-carousel" onClick={nextMainImage}>
+              &#10095;
+            </button>
+          </div>
+        </div>
+        <div className="main-project-description">
+          <h1 style={{ font: "bold", fontSize: 30, paddingTop: 15 }}>
+            Fantasy football web and mobile app
+          </h1>
+        </div>
+        <div
+          style={{
+            paddingTop: 15,
+            paddingLeft: 30,
+          }}
+        >
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Revamped the majority of the site's layout, substantially
+                improving both navigation and visual design.
+              </h4>
+            </div>
+          </article>
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Developed a news management system for collaborators to create
+                and publish articles.
+              </h4>
+            </div>
+          </article>
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Created a personalized news feed in the app that delivers the
+                latest updates on users' favorite players, keeping fans informed
+                and engaged.
+              </h4>
+            </div>
+          </article>
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Created a soundboard feature for real-time audio sharing,
+                enhancing user interaction during auctions.
+              </h4>
+            </div>
+          </article>
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Integrated high-performance data tables using React Virtualized
+                to improve UI responsiveness.
+              </h4>
+            </div>
+          </article>
+          <article>
+            <BsPatchCheckFill className="icons" />
+            <div>
+              <h4>
+                Resolved numerous bugs, improving stability for over 1,000,000
+                users.
+              </h4>
+            </div>
+          </article>
+        </div>
+        {/* <div className="main-project-description">
+          <div className="all-user-actions">
+            <p className="user-actions">Redux</p>
+            <p className="user-actions">React Virtualised Window</p>
+            <p className="user-actions">Company's component library</p>
+            <p className="user-actions">React</p>
+            <p className="user-actions">React Native</p>
+            <p className="user-actions">Local Storage - Persisted</p>
+            <p className="user-actions">Performance enhancement</p>
+            <p className="user-actions">Cashing solutions</p>
+          </div>
+        </div> */}
+      </div>
+      <div className="main-project" style={{ width: "50%" }}>
+        <div className="product-img">
+          <img src={images[currentImage]} alt="Language website" />
+          <div className="carousel-controls">
+            <button className="btn-carousel" onClick={prevImage}>
+              &#10094;
+            </button>
+            <button className="btn-carousel" onClick={nextImage}>
+              &#10095;
+            </button>
+          </div>
+        </div>
+        <div className="main-project-description">
+          <div className="main-project-tools">
+            <div className="back-front-end">
+              <h3>Project 1 - FullStack language website</h3>
+              <p>
+                This passion project of mine serves over 200 students, allowing
+                users to create an account, take tests, save their scores, and
+                access a personalized progress page.
+              </p>
+              <p className="extra-tools-main-project">
+                * Built with Firebase and React.
+              </p>
+              <div className="project-btns">
+                <a
+                  href="https://app.fantalab.it/home"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/LaneAntunes/Language-Website-Full-Stack"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+
+            <div className="back-front-end">
+              <h3>Project 2 - Meal Manager</h3>
+              <p>
+                This app is a solution for meal planning and grocery shopping,
+                automatically updating and categorizing grocery lists when meals
+                are adjusted. It dynamically updates servings and costs, and
+                allows users to check off items as they shop, simplifying the
+                entire process.
+              </p>
+              <p className="extra-tools-main-project">
+                * Build with vanila javascrip and css.
+              </p>
+              <div className="project-btns">
+                <a
+                  href="https://app.fantalab.it/home"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/LaneAntunes/Language-Website-Full-Stack"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Portfolio
-
-

@@ -1,26 +1,29 @@
-import React from 'react'
-import './about.css'
-
-
-
+import React from "react"
+import "./about.css"
 
 function About() {
-    return (
-        <section className='about--section' id="about">
-            <h1 className='about--me--title'>A little about me</h1>
-            <div className='description'>
-                <p>
-                    I am a self-taught front-end developer from Brazil, currently based in Lisbon, Portugal.
-                    I am very passionate about programming, and would love to have an opportunity to work with the technologies listed here.  I am also highly motivated to learn and embrace new technologies to continually enhance my development skills.
-                </p>
-                <p>
-                    My experience teaching in various countries has honed my expertise in language instruction, resulting in solid communication skills and a natural ability to adapt to diverse cultures and environments.                </p>
-
-                <a href="#contact" className='btn'>Let's Talk</a>
-            </div>
-        </section>
-    )
+  return (
+    <section className="about--section" id="about">
+      <h1 className="about--me--title">A little about me</h1>
+      <div className="description">
+        <p>
+          With nearly one year of professional experience and an additional
+          eighteen months of rigorous programming training, I have honed my
+          skills in developing dynamic web and mobile applications using the
+          React framework.
+        </p>
+        <p>
+          I enjoy experimenting with various component libraries and tools to
+          optimize the functionality, efficiency, and performance of the
+          projects I engage with. Always happy to connect with fellow tech
+          enthusiasts and share insights on the latest trends in development.
+        </p>
+        <a href="#contact" className="btn">
+          Let's Talk
+        </a>
+      </div>
+    </section>
+  )
 }
 
 export default About
-

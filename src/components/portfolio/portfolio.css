@@ -1,232 +1,250 @@
 .portfolio-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio-section h5 {
-    padding-top: 8rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-
+  padding-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .main-project {
-    width: 60%;
-    align-self: center;
-    border: 1px solid var(--color-primary);
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-.back-front-end h3 {
-    font-size: 1.2rem;
-}
-
-.back-front-end p {
-    font-size: 1rem;
-    text-align: center;
-}
-
-
-.all-user-actions {
-    gap: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-}
-
-.user-actions {
-    background: var(--color-primary);
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid blueviolet;
-
-}
-
-.main-project-description p {
-    font-size: .9rem;
-
-}
-
-.extra-tools-main-project {
-    font-style: italic;
-    padding-top: .6rem;
-    padding-bottom: .8rem;
-    font-size: .6rem;
-}
-
-.website-code {
-    align-self: center;
-    margin-bottom: 4rem;
-    background: rgb(248, 241, 251);
-    color: black;
-    width: max-content;
-    display: inline-block;
-    color: purple;
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-
-}
-
-.website-code:hover {
-    transform: scale(1.1);
-    background: var(--color-white);
-    color: black;
-    border-color: transparent;
-}
-
-.my-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.portfolio-section h3 {
-    color: #ebd5faec;
-    text-align: center;
-    width: 100%;
-    padding: .5rem 0rem;
-    /* background: var(--color-primary); */
-}
-
-.project-details {
-    max-width: 350px;
-    border-radius: .5rem;
-    justify-content: center;
-    border: 2px solid var(--color-primary);
-    overflow: hidden;
-    padding-bottom: 1rem;
-    position: relative;
-}
-
-.product-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 8px solid var(--color-primary);
-}
-
-.main-project-tools {
-    display: flex;
-    gap: 1rem;
+  width: "50%";
+  align-self: center;
+  /* border: 1px solid var(--color-primary); */
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .back-front-end {
-    border: 2px solid var(--color-primary);
-    padding: .5rem;
-    width: 100%;
-    margin: 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.project-description {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.back-front-end h3 {
+  font-size: 1.2rem;
 }
 
-.project-description p {
-    padding: .9em .6em;
-    display: flex;
-    justify-content: center;
+.back-front-end p {
+  font-size: 1rem;
+  text-align: center;
 }
 
-.main-project-description {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    justify-items: center;
+.all-user-actions {
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
 }
 
-.project-tools {
-    display: flex;
-    gap: 2rem;
-    padding-left: .5em;
-    padding-right: .5em;
-    padding: 1rem;
-
+.user-actions {
+  background: var(--color-primary);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
 }
 
-.tools-and-btns {
-    width: 100%;
-    position: absolute;
-    bottom: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-btns {
-    display: flex;
-    gap: 1rem;
-}
-
-.project-btns * {
-    background: var(--color-primary);
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    gap: .8em;
+.main-project-description p {
+  font-size: 0.9rem;
 }
 
 .extra-tools-main-project {
-    text-align: center;
-    /* padding-left: 1rem; */
+  font-style: italic;
+  padding-top: 0.6rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.6rem;
 }
 
+.website-code {
+  align-self: center;
+  margin-bottom: 4rem;
+  background: rgb(248, 241, 251);
+  color: black;
+  width: max-content;
+  display: inline-block;
+  color: purple;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.website-code:hover {
+  transform: scale(1.1);
+  background: var(--color-white);
+  color: black;
+  border-color: transparent;
+}
+
+.my-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.portfolio-section h3 {
+  color: #ebd5faec;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  /* background: var(--color-primary); */
+}
+
+.project-details {
+  max-width: 350px;
+  /* border-radius: 0.5rem; */
+  justify-content: center;
+  /* border: 2px solid var(--color-primary); */
+  overflow: hidden;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 8px solid var(--color-primary); */
+  padding-right: 60px;
+  padding-left: 60px;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.main-project-tools {
+  display: flex;
+  gap: 1rem;
+}
+
+.back-front-end {
+  border: 2px solid var(--color-primary);
+  padding: 0.5rem;
+  width: 100%;
+  margin: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description p {
+  padding: 0.9em 0.6em;
+  display: flex;
+  justify-content: center;
+}
+
+.main-project-description {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.project-tools {
+  display: flex;
+  gap: 2rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 1rem;
+}
+
+.tools-and-btns {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btns * {
+  background: var(--color-primary);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.extra-tools-main-project {
+  text-align: center;
+  /* padding-left: 1rem; */
+}
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.btn-carousel {
+  background-color: rgba(245, 245, 245, 0.105);
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px; /* Larger font size for better visibility */
+  color: #f2f2f2; /* Dark color for contrast */
+  border-radius: 5px;
+}
+
+.btn-carousel:hover {
+  background-color: var(--color-primary);
+}
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
-    .portfolio-section h5 {
-        padding-top: 2rem;
-    }
+  .portfolio-section h5 {
+    padding-top: 2rem;
+  }
 
-    .tools-and-btns {
-        position: relative;
-    }
-
-
+  .tools-and-btns {
+    position: relative;
+  }
 }
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
-    .main-project {
-        width: 100%;
-    }
+  .main-project {
+    width: 100%;
+  }
 }
 
 /*===========MEDIA QUERIES (SMALL DEVICES) =======*/
 @media screen and (max-width: 600px) {
-
-    .all-user-actions {
-        gap: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1em;
-    }
-
-
-
+  .all-user-actions {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
 }
