@@ -7,16 +7,20 @@ function About() {
       <h1 className="about--me--title">A little about me</h1>
       <div className="description">
         <p>
-          With nearly one year of professional experience and an additional
-          eighteen months of rigorous programming training, I have honed my
-          skills in developing dynamic web and mobile applications using the
-          React framework.
+          With nearly a year of professional experience and an intensive
+          programming training, I specialize in developing web and mobile
+          applications using React.
         </p>
         <p>
-          I enjoy experimenting with various component libraries and tools to
-          optimize the functionality, efficiency, and performance of the
-          projects I engage with. Always happy to connect with fellow tech
-          enthusiasts and share insights on the latest trends in development.
+          My experience at a small company has provided me with the unique
+          opportunity to take on diverse responsibilities, rapidly expanding my
+          skill set and allowing me to make significant contributions across
+          multiple aspects of the development process.
+        </p>
+        <p>
+          I have developed and integrated sophisticated features, enhanced
+          application performance, and resolved numerous bugs, significantly
+          boosting stability and reliability for over million users.
         </p>
         <a href="#contact" className="btn">
           Let's Talk

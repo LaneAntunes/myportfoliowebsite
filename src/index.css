@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
 
 /* Box sizing */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: 0;
-    list-style: 0;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: 0;
+  list-style: 0;
+  text-decoration: none;
 }
 
 /* ------------------- */
@@ -19,78 +23,71 @@
 /* ------------------- */
 
 :root {
-    /* Typography*/
-    --font-size-one: 1.5rem;
-    --font-size-two: 1.3rem;
-    --font-size-three: 1rem;
-    --font-size-four: .8rem;
+  /* Typography*/
+  --font-size-one: 1.5rem;
+  --font-size-two: 1.3rem;
+  --font-size-three: 1rem;
+  --font-size-four: 0.8rem;
 
-    /* --color-bg: #1f1f3898; */
-    --color-bg: rgb(144, 21, 163);
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #8251a8a0;
-    --color-primary-variant: #debbf9f3;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+  /* --color-bg: #1f1f3898; */
+  --color-bg: rgb(144, 21, 163);
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #8251a8a0;
+  --color-primary-variant: #debbf9f3;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
 
-    --transition: all 400ms ease;
+  --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 /* make images easier to work with */
 img,
 picture {
-    width: 100%;
-    display: block;
-
+  width: 100%;
+  display: block;
 }
 
 body {
-    max-width: 100%;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    font-family: "Poppins", sans-serif;
-    /* background: var(--color-bg); */
-    color: var(--color-white);
-    line-height: 1.57;
-    background-color: #04001db3;
-    opacity: 0.9;
-    background-image: radial-gradient(#a107e4 0.75px, #05001bd1 0.75px);
-    background-size: 15px 15px;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  /* background: var(--color-bg); */
+  color: var(--color-white);
+  line-height: 1.57;
+  background-color: #04001db3;
+  opacity: 0.9;
+  background-image: radial-gradient(#a107e4 0.75px, #05001bd1 0.75px);
+  background-size: 15px 15px;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
-
 
 /******** GENERAL STYLES*****/
 .container {
-    width: var(--container-width-lg);
-    padding: 0rem;
-
+  width: var(--container-width-lg);
+  padding: 0rem;
 }
 
 h1,
@@ -98,101 +95,88 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 h1 {
-    font-size: var(--font-size-one);
+  font-size: var(--font-size-one);
 }
 
 h2 {
-    font-size: var(--font-size-two);
+  font-size: var(--font-size-two);
 }
 
 h3 {
-    font-size: var(--font-size-three);
+  font-size: var(--font-size-three);
 }
 
 p {
-    font-size: var(--font-size-four);
-    font-weight: 300;
+  font-size: var(--font-size-four);
+  font-weight: 300;
 }
 
-section>h5 {
-    color: var(--color-light);
-    padding-top: 2rem;
-    text-align: center;
-
+section > h5 {
+  color: var(--color-light);
+  padding-top: 2rem;
+  text-align: center;
 }
 
-section>h1 {
-    color: var(--color-primary-variant);
-    padding-bottom: 1rem;
-    text-align: center;
-
+section > h1 {
+  color: var(--color-primary-variant);
+  padding-bottom: 1rem;
+  text-align: center;
 }
-
-
 
 .text-light {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 a {
-    color: var(--color-primary);
-    transition: var(--transition);
-    font-size: var(--font-size-four);
+  color: var(--color-primary);
+  transition: var(--transition);
+  font-size: var(--font-size-four);
 }
 
 a:hover {
-    color: var(--color-white);
-
+  color: var(--color-white);
 }
 
 .btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-white);
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-
+  width: max-content;
+  display: inline-block;
+  color: var(--color-white);
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
-
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
 }
-
-
 
 /*===========MEDIA QUERIES (MEDIUM DEVICES) =======*/
 @media screen and (max-width: 1024px) {
-
-    body {
-        background-color: #04001db3;
-        opacity: 0.9;
-        background-image: radial-gradient(#a903f10f 0.50px, #05001bd1 0.70px);
-        background-size: 25px 25px;
-        margin-left: .8rem;
-        margin-right: .8rem;
-    }
-
+  body {
+    background-color: #04001db3;
+    opacity: 0.9;
+    background-image: radial-gradient(#a903f10f 0.5px, #05001bd1 0.7px);
+    background-size: 25px 25px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
-    body {
-        background-color: #04001db3;
-        opacity: 0.9;
-        background-image: radial-gradient(#a903f10f 0.50px, #05001bd1 0.70px);
-        background-size: 25px 25px;
-        margin-left: .8rem;
-        margin-right: .8rem;
-    }
-
+  body {
+    background-color: #04001db3;
+    opacity: 0.9;
+    background-image: radial-gradient(#a903f10f 0.5px, #05001bd1 0.7px);
+    background-size: 25px 25px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
 }
