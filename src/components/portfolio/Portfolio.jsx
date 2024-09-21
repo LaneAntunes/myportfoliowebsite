@@ -43,11 +43,11 @@ const Project = ({ data, type }) => {
   }
 
   return (
-    <div className="w-full lg:w-3/5 ">
+    <div className="w-full  ">
       <div>
         <div>
           <img
-            className="h-[250px] md:h-[450px]"
+            className="h-[250px] md:h-[500px] object-cover md:object-contain"
             src={`${
               type === "secondary"
                 ? images[currentImage]
@@ -122,18 +122,20 @@ const Project = ({ data, type }) => {
           </div>
         ) : (
           <div className="pt-8">
-            <h1 className="text-center">{data?.[0].title}</h1>
-            <div>
-              {data?.[0].bulletPoints.map((item) => {
-                return (
-                  <article>
-                    <BsPatchCheckFill className="icons" />
-                    <div>
-                      <p className="text-base">{item}</p>
-                    </div>
-                  </article>
-                )
-              })}
+            <h2 className="text-center">{data?.[0].title}</h2>
+            <div className="flex items-center w-full justify-center ">
+              <div className=" md:w-[70%] p-2">
+                {data?.[0].bulletPoints.map((item) => {
+                  return (
+                    <article>
+                      <BsPatchCheckFill className="icons" />
+                      <div>
+                        <p className="text-base">{item}</p>
+                      </div>
+                    </article>
+                  )
+                })}
+              </div>
             </div>
           </div>
         )}
@@ -146,10 +148,10 @@ function Portfolio() {
   return (
     <section className="portfolio-section" id="portfolio">
       <h5>What I have built</h5>
-      <h1>My Projects</h1>
+      <h1>Key Projects in Fantasy Sports Tech</h1>
       <div className="w-full flex flex-col items-center gap-1 pt-8">
         <Project data={mainProjectData} />
-        <Project data={smallProjectsData} type={"secondary"} />
+        {/* <Project data={smallProjectsData} type={"secondary"} /> */}
       </div>
     </section>
   )

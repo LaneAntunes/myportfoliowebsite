@@ -8,7 +8,7 @@ section .skills--section {
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   margin-top: 3rem;
 }

@@ -1,14 +1,14 @@
 export const mainProjectData = [
   {
     imageLink: "fantalab1.PNG,fantalab2.PNG,fantalab3.PNG,fantalab4.PNG",
-    title: "Fantasy football web and mobile app",
+    title: "A Few of My Contributions to Fantalab:",
     bulletPoints: [
-      "Revamped the majority of the site's layout, substantially improving both navigation and visual design.",
-      "Developed a news management system for collaborators to create and publish articles.",
-      "Created a personalized news feed in the app that delivers the latest updates on users' favorite players, keeping fans informed and engaged.",
-      "Created a soundboard feature for real-time audio sharing, enhancing user interaction during auctions.",
-      "Integrated high-performance data tables using React Virtualized to improve UI responsiveness.",
-      "Resolved numerous bugs, improving stability for over 1,000,000 users.",
+      "Led a major revamp of the site’s layout, enhancing navigation and visual appeal, significantly improving user experience metrics.",
+      "Designed and implemented a news management system enabling collaborators to efficiently create and manage content.",
+      "Developed a personalized news feed, increasing user engagement by consistently delivering tailored updates on favorite players.",
+      "Introduced a soundboard feature for real-time audio during auctions, boosting interactive user participation.",
+      "Integrated high-performance data tables with React Virtualized, enhancing UI responsiveness and managing large datasets effectively.",
+      "Troubleshot and resolved critical bugs, bolstering system stability for a user base of over 1 million.",
     ],
   },
 ]

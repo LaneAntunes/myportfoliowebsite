@@ -45,52 +45,52 @@ function Skills() {
             </div>
           </div>
         </div>
-        <div className="small-skill-containers">
-          <div className="skill-cards">
-            <h2>Back-end</h2>
-            <div className="backend-card">
-              <article>
-                <BsPatchCheckFill className="icons" />
-                <div>
-                  <h4>Firebase</h4>
-                </div>
-              </article>
-              <article>
-                <BsPatchCheckFill className="icons" />
-                <div>
-                  <h4>AWS Lambda</h4>
-                </div>
-              </article>
-            </div>
-            <div style={{ paddingLeft: 15, paddingRight: 15 }} className="pb-5">
-              <h5 style={{ textAlign: "center" }} className="text-xs">
-                *Authentication, database operations, and cloud functions.
-              </h5>
-            </div>
+        {/* <div className="small-skill-containers"> */}
+        <div className="skill-cards">
+          <h2>Back-end</h2>
+          <div className="backend-card">
+            <article>
+              <BsPatchCheckFill className="icons" />
+              <div>
+                <h4>Firebase</h4>
+              </div>
+            </article>
+            <article>
+              <BsPatchCheckFill className="icons" />
+              <div>
+                <h4>AWS Lambda</h4>
+              </div>
+            </article>
           </div>
-          <div className="skill-cards">
-            <h2>Tools</h2>
-            <div className=" bg-blue min-w-full flex-wrap  flex gap-2 p-3 justify-center ">
-              {/* <div className=" min-w-full flex flex-row flex-wrap"> */}
-              <article>
-                <BsPatchCheckFill className="icons" />
-                <div>
-                  <h4>
-                    <span className="text-purple-500">Version Control:</span>{" "}
-                    Git, GitHub, SourceTree, Bitbucket.
-                  </h4>
-                </div>
-              </article>
-              <article>
-                <BsPatchCheckFill className="icons" />
-                <div>
-                  <h4>
-                    <span className="text-purple-500">IDEs:</span> XCode,
-                    Android Studio, WebStorm, Visual Studio Code.
-                  </h4>
-                </div>
-              </article>
-              {/* <article>
+          <div style={{ paddingLeft: 15, paddingRight: 15 }} className="pb-5">
+            <h5 style={{ textAlign: "center" }} className="text-xs">
+              *Authentication, database operations, and cloud functions.
+            </h5>
+          </div>
+        </div>
+        <div className="skill-cards">
+          <h2>Tools</h2>
+          <div className=" bg-blue min-w-full flex-wrap  flex gap-2 p-3 justify-center ">
+            {/* <div className=" min-w-full flex flex-row flex-wrap"> */}
+            <article>
+              <BsPatchCheckFill className="icons" />
+              <div>
+                <h4>
+                  <span className="text-purple-500">Version Control:</span>
+                  Git, GitHub, SourceTree, Bitbucket.
+                </h4>
+              </div>
+            </article>
+            <article>
+              <BsPatchCheckFill className="icons" />
+              <div>
+                <h4>
+                  <span className="text-purple-500">IDEs:</span> XCode, Android
+                  Studio, WebStorm, Visual Studio Code.
+                </h4>
+              </div>
+            </article>
+            {/* <article>
                 <BsPatchCheckFill className="icons" />
                 <div>
                   <h4>SourceTree</h4>
@@ -114,36 +114,36 @@ function Skills() {
                   <h4>Webstorm - VS code</h4>
                 </div>
               </article> */}
-              {/* </div> */}
-            </div>
+            {/* </div> */}
           </div>
-          <div className="skill-cards pb-5">
-            <h3>Human Languages</h3>
-            <div className="language-card" style={{ gap: 30 }}>
-              <article>
-                <div>
-                  <h4>Portuguese</h4>
-                  <h5>Native</h5>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h4>English</h4>
-                  <h5>Fluent</h5>
-                </div>
-              </article>
+        </div>
+        <div className="skill-cards pb-5">
+          <h2>Human Languages</h2>
+          <div className="language-card">
+            <article>
               <div>
-                <article>
-                  <div>
-                    <h4>French</h4>
-                    <h5>Intermediate</h5>
-                  </div>
-                </article>
+                <h4>Portuguese</h4>
+                <h5>Native</h5>
               </div>
+            </article>
+            <article>
+              <div>
+                <h4>English</h4>
+                <h5>Fluent</h5>
+              </div>
+            </article>
+            <div>
+              <article>
+                <div>
+                  <h4>French</h4>
+                  <h5>Intermediate</h5>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </section>
   )
 }

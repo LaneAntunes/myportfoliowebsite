@@ -20,7 +20,7 @@ function About() {
         <p>
           I have developed and integrated sophisticated features, enhanced
           application performance, and resolved numerous bugs, significantly
-          boosting stability and reliability for over million users.
+          boosting stability and reliability for over one million users.
         </p>
         <a href="#contact" className="btn">
           Let's Talk
