@@ -4,7 +4,7 @@ export const mainProjectData = [
     title: "A Few of My Contributions to Fantalab:",
     bulletPoints: [
       "Led a major revamp of the site’s layout, enhancing navigation and visual appeal, significantly improving user experience metrics.",
-      "Designed and implemented a news management system enabling collaborators to efficiently create and manage content.",
+      "Implemented a news management system enabling collaborators to efficiently create and manage content.",
       "Developed a personalized news feed, increasing user engagement by consistently delivering tailored updates on favorite players.",
       "Introduced a soundboard feature for real-time audio during auctions, boosting interactive user participation.",
       "Integrated high-performance data tables with React Virtualized, enhancing UI responsiveness and managing large datasets effectively.",

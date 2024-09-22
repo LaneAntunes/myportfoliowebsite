@@ -9,7 +9,7 @@ function Skills() {
       <h1>Skills & Technologies</h1>
       <div className="skill-containers">
         <div className="skill-cards fontend">
-          <h2>Font-end</h2>
+          <h2>Front-end</h2>
           <div className=" py-5">
             {/* <div> */}
             <article>

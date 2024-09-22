@@ -148,7 +148,7 @@ function Portfolio() {
   return (
     <section className="portfolio-section" id="portfolio">
       <h5>What I have built</h5>
-      <h1>Key Projects in Fantasy Sports Tech</h1>
+      <h1>Key Projects at Fantasy Football Company</h1>
       <div className="w-full flex flex-col items-center gap-1 pt-8">
         <Project data={mainProjectData} />
         {/* <Project data={smallProjectsData} type={"secondary"} /> */}

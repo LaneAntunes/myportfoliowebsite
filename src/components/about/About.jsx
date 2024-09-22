@@ -17,11 +17,11 @@ function About() {
           skill set and allowing me to make significant contributions across
           multiple aspects of the development process.
         </p>
-        <p>
+        {/* <p>
           I have developed and integrated sophisticated features, enhanced
           application performance, and resolved numerous bugs, significantly
           boosting stability and reliability for over one million users.
-        </p>
+        </p> */}
         <a href="#contact" className="btn">
           Let's Talk
         </a>
