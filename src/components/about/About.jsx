@@ -7,21 +7,10 @@ function About() {
       <h1 className="about--me--title">A little about me</h1>
       <div className="description">
         <p>
-          With nearly a year of professional experience and an intensive
-          programming training, I specialize in developing web and mobile
-          applications using React.
+          I’m a Brazilian developer based in Lisbon, currently working remotely on a London-based fantasy football platform.
         </p>
         <p>
-          My experience at a small company has provided me with the unique
-          opportunity to take on diverse responsibilities, rapidly expanding my
-          skill set and allowing me to make significant contributions across
-          multiple aspects of the development process.
-        </p>
-        {/* <p>
-          I have developed and integrated sophisticated features, enhanced
-          application performance, and resolved numerous bugs, significantly
-          boosting stability and reliability for over one million users.
-        </p> */}
+          In 2022, I transitioned from language teaching to software development, driven by curiosity and self-learning. I enjoy building clean, responsive interfaces and turning complex tools into simple, intuitive experiences.        </p>
         <a href="#contact" className="btn">
           Let's Talk
         </a>

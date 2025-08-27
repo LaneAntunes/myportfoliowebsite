@@ -68,7 +68,7 @@ section .skills--section {
 
 .skill-cards h2 {
   /* padding-bottom: 1.5rem; */
-  color: var(--color-primary-variant);
+  /*color: 'white';*/
 }
 .small-skill-containers {
   display: flex;

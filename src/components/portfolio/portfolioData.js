@@ -2,14 +2,7 @@ export const mainProjectData = [
   {
     imageLink: "fantalab1.PNG,fantalab2.PNG,fantalab3.PNG,fantalab4.PNG",
     title: "A Few of My Contributions to Fantalab:",
-    bulletPoints: [
-      "Led a major revamp of the site’s layout, enhancing navigation and visual appeal, significantly improving user experience metrics.",
-      "Implemented a news management system enabling collaborators to efficiently create and manage content.",
-      "Developed a personalized news feed, increasing user engagement by consistently delivering tailored updates on favorite players.",
-      "Introduced a soundboard feature for real-time audio during auctions, boosting interactive user participation.",
-      "Integrated high-performance data tables with React Virtualized, enhancing UI responsiveness and managing large datasets effectively.",
-      "Troubleshot and resolved critical bugs, bolstering system stability for a user base of over 1 million.",
-    ],
+
   },
 ]
 
@@ -35,3 +28,25 @@ export const smallProjectsData = [
   //     codeLInk: "https://github.com/LaneAntunes/mastergroceries",
   //   },
 ]
+
+
+export const fantalabBulletPoints = [
+  "Led a major revamp of the site’s layout, enhancing navigation and visual appeal, significantly improving user experience metrics.",
+"  Designed and built core features with React and Redux Toolkit, including a news management system and personalized news feed.",
+"  Developed a real-time audio sharing soundboard integrated with Firebase Realtime Database for live auction events.",
+  "Created high-performance data tables using React Window and Virtuoso",
+
+ " Leveraged JavaScript libraries to enhance UI components and improve functionality from ambiguous requirements.",
+  "Helped design database structures for important features, enabling scalability and data-driven decisions.",
+  " Implemented end-to-end testing with Detox for the React Native app and automated unit testing with Jest and React Testing Library for the web app.\n",
+  "Debugged and resolved critical bugs, significantly improving platform stability and enabling the user base to scale past one million."
+]
+
+
+export const sosBulletPoints =
+  [
+    "Built a news platform app from scratch using the latest React architecture, evaluating libraries and finding alternatives for deprecated ones. The app has now surpassed 600k downloads across platforms.",
+    "Implemented features from the Fantalab game app, reusing and refactoring complex components for simpler usage in the new app.",
+    "Helped define the database structure to support app requirements efficiently.",
+    "Set up RTK Query for structured and efficient API calls."
+  ]
