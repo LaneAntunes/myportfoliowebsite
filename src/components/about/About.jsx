@@ -7,16 +7,10 @@ function About() {
       <h1 className="about--me--title">A little about me</h1>
       <div className="description">
         <p>
-          In 2022, I transitioned from teaching languages to software development, a shift driven by curiosity and a lot of self-teaching.
+          I’m a Brazilian developer based in Lisbon, currently working remotely on a London-based fantasy football platform.
         </p>
         <p>
-          Since then, I’ve been working on a fantasy football platform with over a million users, where I focus on building intuitive, responsive interfaces and simplifying complex features.
-        </p>
-        {/* <p>
-          I have developed and integrated sophisticated features, enhanced
-          application performance, and resolved numerous bugs, significantly
-          boosting stability and reliability for over one million users.
-        </p> */}
+          In 2022, I transitioned from language teaching to software development, driven by curiosity and self-learning. I enjoy building clean, responsive interfaces and turning complex tools into simple, intuitive experiences.        </p>
         <a href="#contact" className="btn">
           Let's Talk
         </a>

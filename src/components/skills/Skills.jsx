@@ -85,8 +85,8 @@ const SkillCard = ({ data, showBackground }) => {
      rounded-[30px]
     px-[10px] py-[40px]
     ${showBackground ? "bg-[#8251a8a0]" : ""}
-    md:px-2 md:py-2   
-    lg:px-8 lg:py-8
+    md:px-2 md:py-4   
+    lg:px-8 lg:py-10
     w-full lg:w-[700px] 
   `}>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
@@ -116,8 +116,6 @@ function Skills() {
   return (
     <section className=" flex flex-col items-center" id="skills">
         <h1 >{"COMPETENCES"}</h1>
-
-
       <div   className={"flex flex-col pt-10 gap-9 lg:flex-row "} style={{
         width: "100%",
         // backgroundColor: "white",
@@ -126,20 +124,23 @@ function Skills() {
         alignItems: "center",
         flexWrap: "wrap",
 
-
       }}>
-        <div className={"flex flex-col gap-6 lg:w-[700px]"}>
+        <div className={"flex flex-col gap-6 lg:w-[700px] w-full"}>
           <h2 style={{ textAlign: "center" }}>{"PROFECIENT"}</h2>
           <SkillCard showBackground data={coreCompetences}/>
         </div>
-        <div className={"flex flex-col gap-6 lg:w-[700px]"}>
+        <div className={"flex flex-col gap-6 lg:w-[700px] w-full"}>
           <h2 style={{ textAlign: "center" }}>{"FAMILIA WITH"}</h2>
           <SkillCard data={familiarWith}/>
         </div>
       </div>
-      <div className={"flex flex-col gap-6 pt-16  lg:w-[700px] "}>
+
+      <div   className={"flex flex-col pt-10 gap-9 lg:w-[700px] w-full"} style={{
+      }}>
+      <div className={"flex flex-col gap-6 pt-16  lg:w-[700px] w-full "}>
         <h2 style={{ textAlign: "center" }}>{"LANGUAGES"}</h2>
         <SkillCard data={languages}/>
+      </div>
       </div>
 
 

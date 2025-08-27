@@ -148,8 +148,12 @@ const ProjectInfo = ({ projectBulletPoints }) => {
 
 function Portfolio() {
   return (
-    <section className="portfolio-section pt-20" id="portfolio">
-      <h2 style={{textAlign:'center'}} >Key Projects at Fantasy Football Platform</h2>
+    <section className="portfolio-section bg-[#8251a8a0] py-10 mt-20" id="portfolio">
+
+      {/*<div className='border-gray-50 w-full '>*/}
+        <h2 style={{textAlign:'center', }} >Key Projects at Fantasy Football Platform</h2>
+
+      {/*</div>*/}
       <div className="w-full flex flex-col items-center gap-1 ">
         <div className="pt-14 " >
           <h1 style={{ textAlign: "center",color:'#debbf9f3' }}>{"Mobile App - SOSFanta"}</h1>
