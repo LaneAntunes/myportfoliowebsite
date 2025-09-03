@@ -22,13 +22,6 @@ export const smallProjectsData = [
     liveLink2: "https://mastergroceries.vercel.app/",
     codeLink2: "https://github.com/LaneAntunes/mastergroceries",
   },
-  //   {
-  //     title: "Project 2 - Meal Manager",
-  //     desc: "This app is a solution for meal planning and grocery shopping, automatically updating and categorizing grocery lists when meals are adjusted. It dynamically updates servings and costs, and allows users to check off items as they shop, simplifying the entire process.",
-  //     buildWith: "* Build with vanila javascrip and css.",
-  //     liveLink: "https://mastergroceries.vercel.app/",
-  //     codeLInk: "https://github.com/LaneAntunes/mastergroceries",
-  //   },
 ];
 
 

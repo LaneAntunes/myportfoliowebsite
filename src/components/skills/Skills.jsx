@@ -71,13 +71,10 @@ const SkillCard = ({ data, showBackground, listDirection = 'column' }) => {
   return (
 
     <div  style={{
-
       flexGrow: 1,
-
       justifyContent: "center",
       alignItems: "center",
       display: "flex", flexDirection: "column", gap: "20px",
-      // height: 300,
     }}>
       <div style={{border: "2px solid #8251a8a0"}} className={`
     flex items-center justify-center
@@ -87,6 +84,7 @@ const SkillCard = ({ data, showBackground, listDirection = 'column' }) => {
     md:px-2 md:py-4   
     lg:px-8 lg:py-10
     w-full lg:w-[700px] 
+ md:min-h-[380px]
   `}>
         <div style={{ display: "flex", flexDirection: listDirection, gap: "20px" }}>
           {data?.map((item) => {
@@ -130,7 +128,7 @@ function Skills() {
           <h2 style={{ textAlign: "center" }}>{"PROFICIENT"}</h2>
           <SkillCard showBackground data={coreCompetences}/>
         </div>
-        <div className={"flex flex-col gap-6 lg:w-[700px] w-full"}>
+        <div className={"flex flex-col gap-6 lg:w-[700px] w-full md:min-h-[500px]"}>
           <h2 style={{ textAlign: "center" }}>{"FAMILIAR WITH"}</h2>
           <SkillCard data={familiarWith}/>
         </div>
