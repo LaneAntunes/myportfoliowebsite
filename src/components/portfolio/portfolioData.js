@@ -1,10 +1,12 @@
+export const BOLD_COLOR = "#FFEB3B";
+
 export const mainProjectData = [
   {
     imageLink: "fantalab1.PNG,fantalab2.PNG,fantalab3.PNG,fantalab4.PNG",
     title: "A Few of My Contributions to Fantalab:",
 
   },
-]
+];
 
 export const smallProjectsData = [
   {
@@ -27,26 +29,21 @@ export const smallProjectsData = [
   //     liveLink: "https://mastergroceries.vercel.app/",
   //     codeLInk: "https://github.com/LaneAntunes/mastergroceries",
   //   },
-]
+];
 
 
 export const fantalabBulletPoints = [
   "Led a major revamp of the site’s layout, enhancing navigation and visual appeal, significantly improving user experience metrics.",
-"  Designed and built core features with React and Redux Toolkit, including a news management system and personalized news feed.",
-"  Developed a real-time audio sharing soundboard integrated with Firebase Realtime Database for live auction events.",
-  "Created high-performance data tables using React Window and Virtuoso",
-
- " Leveraged JavaScript libraries to enhance UI components and improve functionality from ambiguous requirements.",
-  "Helped design database structures for important features, enabling scalability and data-driven decisions.",
-  " Implemented end-to-end testing with Detox for the React Native app and automated unit testing with Jest and React Testing Library for the web app.\n",
-  "Debugged and resolved critical bugs, significantly improving platform stability and enabling the user base to scale past one million."
-]
+  `Designed and built core features with <span style="color:${BOLD_COLOR}; font-weight: bold;">React</span> and <span style="color:${BOLD_COLOR}; font-weight: bold;">Redux Toolkit</span>, including a news management system, personalised news feed, and a real-time audio sharing soundboard for live auction events using <span style="color:${BOLD_COLOR}; font-weight: bold;">Firebase Realtime Database.</span>`,
+`Migrated data-heavy tables to virtualized rendering libraries such as <span style="color:${BOLD_COLOR}; font-weight: bold;">React Window</span> and <span style="color:${BOLD_COLOR}; font-weight: bold;">Virtuoso</span>, ensuring faster load times and smoother performance across the app.`,
+`Implemented <span style="color:${BOLD_COLOR}; font-weight: bold;">end-to-end testing</span> with <span style="color:${BOLD_COLOR}; font-weight: bold;">Detox</span> for the React Native app,<span style="color:${BOLD_COLOR}; font-weight: bold;"> playwright</span> for the web app, and automated unit testing with <span style="color:${BOLD_COLOR}; font-weight: bold;">Jest</span> and <span style="color:${BOLD_COLOR}; font-weight: bold;">React Testing Library</span> for the web app.`,
+`Debugged and resolved critical bugs, improving platform stability and enabling the user base to scale <span style="color:${BOLD_COLOR}; font-weight: bold;">past one million.</span>
+`];
 
 
 export const sosBulletPoints =
   [
-    "Built a news platform app from scratch using the latest React architecture, evaluating libraries and finding alternatives for deprecated ones. The app has now surpassed 600k downloads across platforms.",
-    "Implemented features from the Fantalab game app, reusing and refactoring complex components for simpler usage in the new app.",
-    "Helped define the database structure to support app requirements efficiently.",
-    "Set up RTK Query for structured and efficient API calls."
-  ]
+    `Built a news platform mobile app from scratch using the <span style="color:${BOLD_COLOR}; font-weight: bold;">React New Architecture</span>. The app has now surpassed <span style="color:#FFEB3B; font-weight: bold;">600k downloads</span> across platforms.`,
+    `Helped design APIs for key features, ensuring scalability and maintainability`,
+    `Set up <span style="color:${BOLD_COLOR}; font-weight: bold;">RTK Query</span> to handle API calls with caching, automatic state management, and reduced boilerplate, resulting in a more structured and efficient data layer.`,
+  ];

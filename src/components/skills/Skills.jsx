@@ -42,7 +42,6 @@ const familiarWith = [{
   },
   {
     title: "Firebase",
-    description: "Realtime Database, Firestore and Authentication",
   },
   {
     title: "S3 - AWS Lambda",
@@ -68,7 +67,7 @@ const languages = [{
   },
 ];
 
-const SkillCard = ({ data, showBackground }) => {
+const SkillCard = ({ data, showBackground, listDirection = 'column' }) => {
   return (
 
     <div  style={{
@@ -89,7 +88,7 @@ const SkillCard = ({ data, showBackground }) => {
     lg:px-8 lg:py-10
     w-full lg:w-[700px] 
   `}>
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div style={{ display: "flex", flexDirection: listDirection, gap: "20px" }}>
           {data?.map((item) => {
             return (
               <div key={item?.id} style={{ display: "flex", gap: "20px", alignItems: "center" }}>
@@ -114,9 +113,11 @@ const SkillCard = ({ data, showBackground }) => {
 
 function Skills() {
   return (
-    <section className=" flex flex-col items-center" id="skills">
-        <h1 >{"COMPETENCES"}</h1>
-      <div   className={"flex flex-col pt-10 gap-9 lg:flex-row "} style={{
+    <section className=" flex flex-col items-center px-2" id="skills">
+      <div className=" py-6 " >
+        <h1 style={{color:`#debbf9f3`}}>{"COMPETENCES"}</h1>
+      </div>
+      <div   className={"flex flex-col pt-4 gap-9 lg:flex-row "} style={{
         width: "100%",
         // backgroundColor: "white",
         display: "flex",
@@ -126,18 +127,18 @@ function Skills() {
 
       }}>
         <div className={"flex flex-col gap-6 lg:w-[700px] w-full"}>
-          <h2 style={{ textAlign: "center" }}>{"PROFECIENT"}</h2>
+          <h2 style={{ textAlign: "center" }}>{"PROFICIENT"}</h2>
           <SkillCard showBackground data={coreCompetences}/>
         </div>
         <div className={"flex flex-col gap-6 lg:w-[700px] w-full"}>
-          <h2 style={{ textAlign: "center" }}>{"FAMILIA WITH"}</h2>
+          <h2 style={{ textAlign: "center" }}>{"FAMILIAR WITH"}</h2>
           <SkillCard data={familiarWith}/>
         </div>
       </div>
 
       <div   className={"flex flex-col pt-10 gap-9 lg:w-[700px] w-full"} style={{
       }}>
-      <div className={"flex flex-col gap-6 pt-16  lg:w-[700px] w-full "}>
+      <div className={"flex flex-col gap-6 pt-2  lg:w-[700px] w-full "}>
         <h2 style={{ textAlign: "center" }}>{"LANGUAGES"}</h2>
         <SkillCard data={languages}/>
       </div>

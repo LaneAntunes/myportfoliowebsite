@@ -18,7 +18,7 @@ import sosFanta4 from "../../assets/sosFanta4.jpeg";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { fantalabBulletPoints, mainProjectData, smallProjectsData, sosBulletPoints } from "./portfolioData";
 
-const webImages = [fantalab1, fantalab2, fantalab3, fantalab4, fantalab5];
+const webImages = [fantalab5,fantalab1, fantalab2, fantalab3, fantalab4, ];
 const mobileImages = [sosFanta1, sosFanta2, sosFanta3, sosFanta4];
 
 const ProjectImages = ({ data, type, images }) => {
@@ -43,7 +43,7 @@ const ProjectImages = ({ data, type, images }) => {
       <div>
         <div>
           <img
-            className="min-h-[250px] md:min-h-[500px] max-h-[550px] lg:h-[600px] lg:w-[900px] object-cover md:object-contain"
+            className="min-h-[250px] md:min-h-[500px] max-h-[550px] lg:h-[600px] lg:w-[900px] object-contain"
             src={images[currentMainImage]}
           />
         </div>
@@ -130,12 +130,12 @@ const ProjectInfo = ({ projectBulletPoints }) => {
     <div className="p-2 w-full lg:w-[800px] flex flex-col gap-5 ">
       {projectBulletPoints.map((item) => {
         return (
-          <div className='flex gap-4 lg:gap-8 '>
-            <div className='pt-2'>
-            <BsPatchCheckFill fontSize={5} className="icons"/>
+          <div className="flex gap-4 lg:gap-8 ">
+            <div className="pt-2">
+              <BsPatchCheckFill fontSize={5} className="icons"/>
             </div>
             {/*<div >*/}
-              <p className="text-base ">{item}</p>
+            <p className="text-base" dangerouslySetInnerHTML={{ __html: item }}/>
             {/*</div>*/}
           </div>
         );
@@ -145,30 +145,29 @@ const ProjectInfo = ({ projectBulletPoints }) => {
 };
 
 
-
 function Portfolio() {
   return (
     <section className="portfolio-section bg-[#8251a8a0] py-10 mt-20" id="portfolio">
 
       {/*<div className='border-gray-50 w-full '>*/}
-        <h2 style={{textAlign:'center', }} >Key Projects at Fantasy Football Platform</h2>
-
+      <div>
+        <h1 style={{ textAlign: "center" }}>Key Projects at Fantasy Football Platform</h1>
+      </div>
       {/*</div>*/}
       <div className="w-full flex flex-col items-center gap-1 ">
-        <div className="pt-14 " >
-          <h1 style={{ textAlign: "center",color:'#debbf9f3' }}>{"Mobile App - SOSFanta"}</h1>
-
-          <div className='pt-12 gap-8  justify-center flex  flex-col items-center'>
+        <div className="pt-14 ">
+          <h2 style={{ textAlign: "center", color: "#debbf9f3" }}>{"Mobile App - SOSFanta"}</h2>
+          <div className="pt-6 gap-8  justify-center flex  flex-col items-center">
             <ProjectImages images={mobileImages}/>
             <ProjectInfo projectBulletPoints={sosBulletPoints}/>
           </div>
         </div>
-        <div className="pt-10 " >
-        <h1 style={{ textAlign: "center" ,color:'#debbf9f3'}}>{"Web/Mobile App - Fantalab"}</h1>
-          <div className=' gap-8  justify-center flex  flex-col items-center'>
-        <ProjectImages images={webImages}/>
-        <ProjectInfo projectBulletPoints={fantalabBulletPoints}/>
-        </div>
+        <div className="pt-14 ">
+          <h2 style={{ textAlign: "center", color: "#debbf9f3" }}>{"Web/Mobile App - Fantalab"}</h2>
+          <div className=" gap-8  justify-center flex  flex-col items-center">
+            <ProjectImages images={webImages}/>
+            <ProjectInfo projectBulletPoints={fantalabBulletPoints}/>
+          </div>
         </div>
       </div>
     </section>

@@ -35,7 +35,7 @@ function Header() {
                 <div className="me">
                     <img src={ME} alt="me" />
                 </div>
-                <a href='mailto:laneantunes51@gmail.com' target="_blank" className='scroll-down-email'>laneAntunes51@gmail.com</a>
+                <a href='mailto:laneantunes51@gmail.com' target="_blank" className='scroll-down-email'>laneantunes51@gmail.com</a>
             </div>
         </header>
     )

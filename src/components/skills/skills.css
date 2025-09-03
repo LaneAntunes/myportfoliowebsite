@@ -8,7 +8,7 @@ section .skills--section {
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
   margin-top: 3rem;
 }
@@ -22,7 +22,7 @@ section .skills--section {
   border-radius: 1rem;
   padding-top: 2rem;
   transition: 0.2s;
-  width: 600px;
+  /*width: 600px;*/
   min-height: 180px;
 }
 /* .skill-cards .frontend {
@@ -31,13 +31,13 @@ section .skills--section {
 } */
 
 .backend-card {
-  padding: 2rem 6rem;
+  /*padding: 2rem 6rem;*/
   display: flex;
   gap: 2rem;
 }
 
 .frontend-card {
-  padding: 2rem 6rem;
+  /*padding: 2rem 6rem;*/
   display: flex;
   gap: 2rem;
 }
